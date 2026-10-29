@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AnimeGO 1.0-2 — physmath</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+  .back { color: #6b6b76; text-decoration: none; font-size: 14px; }
+  .back:hover { color: #6c5ce7; }
+  .hero { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; margin: 26px 0 22px; }
+  .hero img { width: 104px; height: 104px; border-radius: 23px; box-shadow: 0 10px 28px rgba(0,0,0,.18); margin-right: 18px; -webkit-flex-shrink: 0; flex-shrink: 0; }
+  .hero h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: -.02em; }
+  .hero .sub { color: #6b6b76; font-size: 14px; }
+  .badges { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: 0 0 24px; }
+  .badge { background: #ffffff; border: 1px solid rgba(128,128,128,.22); color: #6b6b76; border-radius: 999px; padding: 5px 11px; font-size: 12px; margin: 0 6px 6px 0; }
+  .card { background: #ffffff; border-radius: 16px; padding: 20px 22px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .card h2 { margin: 0 0 10px; font-size: 17px; }
+  .card p { margin: 0 0 10px; font-size: 14px; }
+  .card p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 20px; font-size: 14px; }
+  li { margin: 4px 0; }
+  ol { margin: 0; padding-left: 20px; font-size: 14px; }
+  .source { display: -webkit-box; display: -webkit-flex; display: flex; margin-top: 12px; }
+  .source input { -webkit-flex: 1; flex: 1; min-width: 0; padding: 11px 13px; border-radius: 12px; border: 1px solid rgba(128,128,128,.35); background: #f6f6fb; color: #1c1c22; font: inherit; font-size: 13px; }
+  .source button, .btn { padding: 11px 15px; border: 0; border-radius: 12px; background: #6c5ce7; color: #fff; font: inherit; font-weight: 600; font-size: 13px; cursor: pointer; text-decoration: none; display: inline-block; }
+  .source button { margin-left: 8px; }
+  .source button:hover, .btn:hover { filter: brightness(1.1); }
+  .buttons { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin-top: 14px; }
+  .buttons .btn { margin: 0 8px 8px 0; }
+  .btn.secondary { background: transparent; color: #6c5ce7; border: 1px solid #6c5ce7; }
+  footer { margin-top: 34px; text-align: center; color: #6b6b76; font-size: 13px; }
+  a { color: #6c5ce7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../../">← physmath repository</a>
+
+  <div class="hero">
+    <img src="icon.png" alt="AnimeGO icon">
+    <div>
+      <h1>AnimeGO</h1>
+      <div class="sub">Version 1.0-2 · physmath</div>
+    </div>
+  </div>
+
+  <div class="badges">
+    <span class="badge">iOS 7.0+</span>
+    <span class="badge">Applications</span>
+    <span class="badge">iphoneos-arm</span>
+    <span class="badge">Free</span>
+  </div>
+
+  <div class="card">
+    <h2>About</h2>
+    <p>AnimeGO is an anime streaming client for iOS 7 and newer. This build is repackaged from the signed IPA so it can be installed directly from Cydia, Sileo or Zebra.</p>
+  </div>
+
+  <div class="card">
+    <h2>Install from Cydia</h2>
+    <ol>
+      <li>Add the source below in Cydia, Sileo or Zebra.</li>
+      <li>Search for <strong>AnimeGO</strong> and install it.</li>
+      <li>The app appears on the Home Screen after <em>uicache</em> runs.</li>
+    </ol>
+    <div class="source">
+      <input id="url" readonly>
+      <button id="copy">Copy</button>
+    </div>
+    <div class="buttons">
+      <a class="btn" id="sileo" href="#">Add to Sileo</a>
+      <a class="btn secondary" id="cydia" href="#">Add to Cydia</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>IPA download</h2>
+    <p>Prefer sideloading? Download the IPA or install it over the air from Safari.</p>
+    <div class="buttons">
+      <a class="btn" href="../../ipa/AnimeGO-ios7-signed.ipa" download>Download IPA</a>
+      <a class="btn secondary" href="itms-services://?action=download-manifest&amp;url=https://physmathdev.github.io/physmath/ipa/manifest.plist">Install (OTA)</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Requirements</h2>
+    <p>Jailbroken iOS 7.0+, <em>uikittools</em>. The app bundle is unsigned, so AppSync (AppSync Unified) is required to launch it, as usual for repackaged IPAs.</p>
+  </div>
+
+  <footer>physmath repository · <a href="../../">physmathdev.github.io/physmath</a></footer>
+</div>
+
+<script>
+(function () {
+  var repo = "https://physmathdev.github.io/physmath/";
+  document.getElementById("url").value = repo;
+  document.getElementById("sileo").href = "sileo://source/" + repo;
+  document.getElementById("cydia").href = "cydia://url/https://cydia.saurik.com/api/share#?source=" + encodeURIComponent(repo);
+  document.getElementById("copy").onclick = function () {
+    var input = document.getElementById("url");
+    input.select();
+    if (navigator.clipboard) navigator.clipboard.writeText(repo);
+    else document.execCommand("copy");
+    this.textContent = "Copied";
+    var btn = this;
+    setTimeout(function () { btn.textContent = "Copy"; }, 1500);
+  };
+})();
+</script>
+</body>
+</html>

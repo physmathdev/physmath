@@ -20,19 +20,20 @@ SHA256: 297c7bee1ab8867f17d4d269e5992823685288b5b2009222baf5a2dd28ce6c2a
 
 Package: me.animego.ios
 Name: AnimeGO
-Version: 1.0-1
+Version: 1.0-2
 Architecture: iphoneos-arm
 Description: AnimeGO client for iOS 7+, repackaged from the signed IPA for Cydia.
 Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
 Author: physmathdev
 Section: Applications
 Depends: firmware (>= 7.0), uikittools
-Homepage: https://physmathdev.github.io/physmath/
-Icon: https://physmathdev.github.io/physmath/icons/animego.png
+Homepage: https://physmathdev.github.io/physmath/depictions/animego/
+Depiction: https://physmathdev.github.io/physmath/depictions/animego/
+Icon: https://physmathdev.github.io/physmath/depictions/animego/icon.png
 Installed-Size: 319
-Filename: debs/me.animego.ios_1.0-1_iphoneos-arm.deb
-Size: 140410
-MD5sum: 4be72799b3c8ab99a9dc9bc45bac73a5
-SHA1: 8d77c441f310216aa82c009420dd4a74fac7208a
-SHA256: bad035fe6c29027ee6352973b322a60f44262ccae7086fc7734261742779133d
+Filename: debs/me.animego.ios_1.0-2_iphoneos-arm.deb
+Size: 194572
+MD5sum: d3c33ebebfca4533a644bb4456945642
+SHA1: dcf63279426907d20a82e1d41d1977556873fa58
+SHA256: 859139ce549ab266885d4b8a2db43bb7c7e2848568511501c626084fe2eb74c0
 Priority: optional
