@@ -19,7 +19,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| `dev.preloading.tubereplacer` (TubeReplacer) | 2.0.1-2 | iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing. |
+| [TubeReplacer](depictions/tubereplacer/) | 2.0.1-3 | iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing. |
 | `me.animego.ios` (AnimeGO) | 1.0 | AnimeGO client for iOS 7+, repackaged from the signed IPA. Installs to `/Applications`. |
 
 ## Apps (IPA)
@@ -64,6 +64,7 @@ sizes and checksums. Only the Python 3 standard library is required.
 ├── Packages.bz2         # compressed index (generated)
 ├── Release              # repo metadata (generated)
 ├── debs/                # .deb packages
+├── depictions/          # package description pages
 ├── ipa/                 # .ipa apps and OTA manifest
 ├── index.html           # web landing page with "Add to ..." links
 └── update_repo.py       # index generator
