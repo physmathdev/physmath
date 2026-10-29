@@ -1,0 +1,17 @@
+Origin: physmath
+Label: physmath
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: physmath Cydia repository
+MD5Sum:
+ 897d65e0f221f90d34f27c13e43011db 920 Packages
+ c478fd0179b00f92eecf9a1139ef7546 540 Packages.gz
+SHA1:
+ 6f1fad6b04a8996ccf23d7a1859d9ccf2a3c7b9c 920 Packages
+ aedea5a7e391e87881b136d74f6f11480703e79a 540 Packages.gz
+SHA256:
+ e8bde1522404b330492a2b7d87fd4a511a1080e4a3afc0dc105f2a81c960e061 920 Packages
+ 8391974a7b0ad0a60024e62f56cd844555b45afe6631ee59e2eaececc01c3f58 540 Packages.gz

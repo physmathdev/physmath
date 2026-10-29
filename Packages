@@ -1,0 +1,19 @@
+Package: dev.preloading.tubereplacer
+Name: TubeReplacer
+Version: 2.0.1-2
+Architecture: iphoneos-arm
+Description: iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing.
+Maintainer: Preloading <me@preloading.dev>
+Author: Preloading <me@preloading.dev>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
+Conflicts: bag.xml.tuberepair
+Homepage: https://cydia.preloading.dev/depictions/tubereplacer/1.0/
+Depiction: https://cydia.preloading.dev/depictions/tubereplacer/1.0/
+Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
+Installed-Size: 2876
+Filename: debs/dev.preloading.tubereplacer_2.0.1-2_iphoneos-arm.deb
+Size: 1028130
+MD5sum: 741f1ddacf06f793fc6343833aedbf52
+SHA1: cb59c63c3ff5e3aa0c0243a565f1bf85108c7f66
+SHA256: 69fca9021aec3bc3681fb521e39176b987130b702a49257d0061810936ff2b5c
