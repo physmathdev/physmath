@@ -20,7 +20,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 | Package | Version | Description |
 | --- | --- | --- |
 | [TubeReplacer](depictions/tubereplacer/) | 2.0.1-3 | iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing. |
-| `me.animego.ios` (AnimeGO) | 1.0 | AnimeGO client for iOS 7+, repackaged from the signed IPA. Installs to `/Applications`. |
+| `me.animego.ios` (AnimeGO) | 1.0-1 | AnimeGO client for iOS 7+, repackaged from the signed IPA. Installs to `/Applications`. |
 
 ## Apps (IPA)
 
