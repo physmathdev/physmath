@@ -20,17 +20,19 @@ Add it in Cydia, Sileo, Zebra or Installer.
 | Package | Version | Description |
 | --- | --- | --- |
 | `dev.preloading.tubereplacer` (TubeReplacer) | 2.0.1-2 | iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing. |
+| `me.animego.ios` (AnimeGO) | 1.0 | AnimeGO client for iOS 7+, repackaged from the signed IPA. Installs to `/Applications`. |
 
 ## Apps (IPA)
 
 | App | Version | Requirements | Download |
 | --- | --- | --- | --- |
-| AnimeGO | 1.0 | iOS 7.0+ | [IPA](ipa/AnimeGO-ios7-signed.ipa) · [OTA install](itms-services://?action=download-manifest&url=https://physmathdev.github.io/physmath/ipa/manifest.plist) |
+| AnimeGO | 1.0 | iOS 7.0+ | [Cydia package](https://physmathdev.github.io/physmath/) `me.animego.ios` · [IPA](ipa/AnimeGO-ios7-signed.ipa) · [OTA install](itms-services://?action=download-manifest&url=https://physmathdev.github.io/physmath/ipa/manifest.plist) |
 
-The IPA is not a Cydia package, so it does not appear in `Packages`. Use the
-**Install (OTA)** link from Safari on the device, or download the `.ipa` and
-sideload it. OTA installation only works if the signature is valid for your
-device.
+The same app is available as a Cydia package (`me.animego.ios`), which installs
+`AnimeGO.app` into `/Applications` and runs `uicache` after installation. The
+IPA is kept for sideloading and OTA installation. The app bundle is unsigned,
+so launching it requires AppSync (AppSync Unified) on the device, as usual for
+repackaged IPAs.
 
 ## Adding or updating packages
 
