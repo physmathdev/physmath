@@ -1,3 +1,28 @@
+Package: crash-reporter
+Name: CrashReporter
+Version: 1.16.0-2
+Architecture: iphoneos-arm
+Description: Send useful crash info to developers.
+ CrashReporter with an added "TXT" button on the crash details screen.
+ The button saves the crash log and syslog as .txt files to
+ /var/mobile/Documents/CrashReporter and offers a share sheet.
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Author: Lance Fetters (ashikase) <support@ashikase.com>
+Section: System
+Depends: coreutils, dpkg, grep, jp.ashikase.libcrashreport (>= 1.1.0), jp.ashikase.libpackageinfo (>= 1.1.0), jp.ashikase.techsupport (>= 1.5.0), mobilesubstrate, preferenceloader
+Homepage: http://github/ashikase/CrashReporter/
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=crashreporterData
+Installed-Size: 1460
+Filename: debs/crash-reporter_1.16.0-2_iphoneos-arm.deb
+Size: 363200
+MD5sum: 22c48aabe87eff3e68e911da06a687ee
+SHA1: c966594950e610f28d7a966912860dd54f6f957f
+SHA256: aad46b40e8b19dcbad4b4de58830ad76b74c63d61637277f8d9be80bc6427ebd
+Pre-Depends: firmware (>=4.0)
+Tag: purpose::uikit, role::enduser
+dev: ashikase
+Sponsor: thebigboss.org <http://thebigboss.org>
+
 Package: dev.preloading.tubereplacer
 Name: TubeReplacer
 Version: 2.0.1-3
