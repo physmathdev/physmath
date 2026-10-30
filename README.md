@@ -19,7 +19,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [TubeReplacer](depictions/tubereplacer/) | 2.0.1-3 | iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing. |
+| [TubeReplacer](depictions/tubereplacer/) | 2.0.1-4 | iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing, and a crash when loading the next feed page. |
 | [AnimeGO](depictions/animego/) | 1.0-3 | AnimeGO client for iOS 4.3–10.3.4, repackaged from the signed IPA. Installs to `/Applications`. |
 | [CrashReporter TXT](depictions/crashreporter/) | 1.16.0-3 | CrashReporter with a TXT export button added by physmathdev. Saves the crash log and syslog to `/var/mobile/Documents/CrashReporter`. |
 

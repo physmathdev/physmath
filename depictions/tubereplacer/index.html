@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TubeReplacer 2.0.1-3 — physmath</title>
+<title>TubeReplacer 2.0.1-4 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="TubeReplacer icon">
     <div>
       <h1>TubeReplacer</h1>
-      <div class="sub">Version 2.0.1-3 · physmath</div>
+      <div class="sub">Version 2.0.1-4 · physmath</div>
     </div>
   </div>
 
@@ -61,11 +61,20 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 2.0.1-4</h2>
+    <ul>
+      <li>Fixed a crash when loading the next page of the subscriptions feed — the continuation object was being passed to CFNetwork instead of a real URL.</li>
+      <li>Added a safety net for other feed continuation requests.</li>
+    </ul>
+  </div>
+
+  <div class="card">
     <h2>What it does</h2>
     <ul>
       <li>Fixes Google sign-in (AppleSpell) so accounts can be added again</li>
       <li>Restores the signed-in home feed</li>
       <li>Fixes subscriptions parsing</li>
+      <li>Prevents crashes when scrolling into the next page of feeds</li>
       <li>Adds preferences for quality and debug options</li>
     </ul>
   </div>
