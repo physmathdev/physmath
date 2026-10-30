@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrashReporter TXT 1.16.0-3 — physmath</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+  .back { color: #6b6b76; text-decoration: none; font-size: 14px; }
+  .back:hover { color: #6c5ce7; }
+  .hero { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; margin: 26px 0 22px; }
+  .hero img { width: 104px; height: 104px; border-radius: 23px; box-shadow: 0 10px 28px rgba(0,0,0,.18); margin-right: 18px; -webkit-flex-shrink: 0; flex-shrink: 0; }
+  .hero h1 { margin: 0 0 4px; font-size: 28px; letter-spacing: -.02em; }
+  .hero .sub { color: #6b6b76; font-size: 14px; }
+  .badges { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: 0 0 24px; }
+  .badge { background: #ffffff; border: 1px solid rgba(128,128,128,.22); color: #6b6b76; border-radius: 999px; padding: 5px 11px; font-size: 12px; margin: 0 6px 6px 0; }
+  .card { background: #ffffff; border-radius: 16px; padding: 20px 22px; margin-bottom: 14px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+  .card h2 { margin: 0 0 10px; font-size: 17px; }
+  .card p { margin: 0 0 10px; font-size: 14px; }
+  .card p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 20px; font-size: 14px; }
+  li { margin: 4px 0; }
+  ol { margin: 0; padding-left: 20px; font-size: 14px; }
+  .source { display: -webkit-box; display: -webkit-flex; display: flex; margin-top: 12px; }
+  .source input { -webkit-flex: 1; flex: 1; min-width: 0; padding: 11px 13px; border-radius: 12px; border: 1px solid rgba(128,128,128,.35); background: #f6f6fb; color: #1c1c22; font: inherit; font-size: 13px; }
+  .source button, .btn { padding: 11px 15px; border: 0; border-radius: 12px; background: #6c5ce7; color: #fff; font: inherit; font-weight: 600; font-size: 13px; cursor: pointer; text-decoration: none; display: inline-block; }
+  .source button { margin-left: 8px; }
+  .source button:hover, .btn:hover { filter: brightness(1.1); }
+  .buttons { display: -webkit-box; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin-top: 14px; }
+  .buttons .btn { margin: 0 8px 8px 0; }
+  .btn.secondary { background: transparent; color: #6c5ce7; border: 1px solid #6c5ce7; }
+  .note { font-size: 13px; color: #6b6b76; }
+  footer { margin-top: 34px; text-align: center; color: #6b6b76; font-size: 13px; }
+  a { color: #6c5ce7; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../../">← physmath repository</a>
+
+  <div class="hero">
+    <img src="icon.png" alt="CrashReporter icon">
+    <div>
+      <h1>CrashReporter TXT</h1>
+      <div class="sub">Version 1.16.0-3 · physmath</div>
+    </div>
+  </div>
+
+  <div class="badges">
+    <span class="badge">iOS 4.0+</span>
+    <span class="badge">System</span>
+    <span class="badge">iphoneos-arm</span>
+    <span class="badge">Free</span>
+  </div>
+
+  <div class="card">
+    <h2>About</h2>
+    <p>CrashReporter collects crash information and helps you send useful reports to developers. This TXT build is maintained by <strong>physmathdev</strong>.</p>
+  </div>
+
+  <div class="card">
+    <h2>TXT export — added by physmathdev</h2>
+    <p>The TXT button on the crash details screen was added by physmathdev. It saves the crash log and syslog as <code>.txt</code> files to:</p>
+    <p><code>/var/mobile/Documents/CrashReporter</code></p>
+    <p>After saving, a share sheet opens so the files can be sent anywhere.</p>
+  </div>
+
+  <div class="card">
+    <h2>Install</h2>
+    <ol>
+      <li>Add the source below in Cydia, Sileo or Zebra.</li>
+      <li>Search for <strong>CrashReporter TXT</strong> and install it.</li>
+    </ol>
+    <div class="source">
+      <input id="url" readonly>
+      <button id="copy">Copy</button>
+    </div>
+    <div class="buttons">
+      <a class="btn" id="sileo" href="#">Add to Sileo</a>
+      <a class="btn secondary" id="cydia" href="#">Add to Cydia</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Requirements</h2>
+    <p>iOS 4.0+ and the original CrashReporter dependencies: MobileSubstrate, PreferenceLoader, libcrashreport, libpackageinfo and techsupport.</p>
+  </div>
+
+  <p class="note">Original CrashReporter by Lance Fetters (ashikase). TXT build and packaging by physmathdev.</p>
+
+  <footer>physmath repository · <a href="../../">physmathdev.github.io/physmath</a></footer>
+</div>
+
+<script>
+(function () {
+  var repo = "https://physmathdev.github.io/physmath/";
+  document.getElementById("url").value = repo;
+  document.getElementById("sileo").href = "sileo://source/" + repo;
+  document.getElementById("cydia").href = "cydia://url/https://cydia.saurik.com/api/share#?source=" + encodeURIComponent(repo);
+  document.getElementById("copy").onclick = function () {
+    var input = document.getElementById("url");
+    input.select();
+    if (navigator.clipboard) navigator.clipboard.writeText(repo);
+    else document.execCommand("copy");
+    this.textContent = "Copied";
+    var btn = this;
+    setTimeout(function () { btn.textContent = "Copy"; }, 1500);
+  };
+})();
+</script>
+</body>
+</html>

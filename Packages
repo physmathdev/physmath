@@ -1,27 +1,25 @@
 Package: crash-reporter
-Name: CrashReporter
-Version: 1.16.0-2
+Name: CrashReporter TXT
+Version: 1.16.0-3
 Architecture: iphoneos-arm
-Description: Send useful crash info to developers.
- CrashReporter with an added "TXT" button on the crash details screen.
- The button saves the crash log and syslog as .txt files to
- /var/mobile/Documents/CrashReporter and offers a share sheet.
-Maintainer: BigBoss <bigboss@thebigboss.org>
-Author: Lance Fetters (ashikase) <support@ashikase.com>
+Description: CrashReporter with a TXT export button added by physmathdev.
+ The TXT button on the crash details screen saves the crash log and syslog as
+ .txt files to /var/mobile/Documents/CrashReporter and opens a share sheet.
+Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
+Author: physmathdev
 Section: System
 Depends: coreutils, dpkg, grep, jp.ashikase.libcrashreport (>= 1.1.0), jp.ashikase.libpackageinfo (>= 1.1.0), jp.ashikase.techsupport (>= 1.5.0), mobilesubstrate, preferenceloader
-Homepage: http://github/ashikase/CrashReporter/
-Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=crashreporterData
+Homepage: https://physmathdev.github.io/physmath/depictions/crashreporter/
+Depiction: https://physmathdev.github.io/physmath/depictions/crashreporter/
+Icon: https://physmathdev.github.io/physmath/depictions/crashreporter/icon.png
 Installed-Size: 1460
-Filename: debs/crash-reporter_1.16.0-2_iphoneos-arm.deb
-Size: 363200
-MD5sum: 22c48aabe87eff3e68e911da06a687ee
-SHA1: c966594950e610f28d7a966912860dd54f6f957f
-SHA256: aad46b40e8b19dcbad4b4de58830ad76b74c63d61637277f8d9be80bc6427ebd
+Filename: debs/crash-reporter_1.16.0-3_iphoneos-arm.deb
+Size: 358196
+MD5sum: 5cc232556cdb5c751b5e8e78efb9641d
+SHA1: afc2561a99fd3b5fb7fbb02fdcddb99cf2203081
+SHA256: c5e6ac578e822de759f0e5925671d8fdd6b01550cebc7a04d02308c8b4c67a33
 Pre-Depends: firmware (>=4.0)
-Tag: purpose::uikit, role::enduser
-dev: ashikase
-Sponsor: thebigboss.org <http://thebigboss.org>
+Priority: optional
 
 Package: dev.preloading.tubereplacer
 Name: TubeReplacer
