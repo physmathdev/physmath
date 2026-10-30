@@ -23,9 +23,9 @@ Priority: optional
 
 Package: dev.preloading.tubereplacer
 Name: TubeReplacer
-Version: 2.0.1-4
+Version: 2.0.1-5
 Architecture: iphoneos-arm
-Description: iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in home feed and subscriptions parsing, and a crash when loading the next feed page.
+Description: iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in feeds, channel avatars and view counts, What To Watch, and feed pagination.
 Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
 Author: physmathdev
 Section: Tweaks
@@ -35,11 +35,11 @@ Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
 Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
 Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
 Installed-Size: 2876
-Filename: debs/dev.preloading.tubereplacer_2.0.1-4_iphoneos-arm.deb
-Size: 1030844
-MD5sum: 10245d6bdedd23e896f29e33d58f7c8c
-SHA1: f1cfb3d4a95bd6cf5be8f5b45d5a1046188e33cb
-SHA256: f418fa3ae1a2a5d642fa2605aab9424dae1cd5744b50175390f0bbde4dad0676
+Filename: debs/dev.preloading.tubereplacer_2.0.1-5_iphoneos-arm.deb
+Size: 1031746
+MD5sum: 73f682b69b858fc29301a5a30edaca75
+SHA1: 9281d0b99abe741e3138e5ec95970af863b55c56
+SHA256: ae3f9e5dd1653188599907ddee1b8887c45d2a911a3c64423dd7bb762596d936
 
 Package: me.animego.ios
 Name: AnimeGO
