@@ -41,6 +41,26 @@ MD5sum: 73f682b69b858fc29301a5a30edaca75
 SHA1: 9281d0b99abe741e3138e5ec95970af863b55c56
 SHA256: ae3f9e5dd1653188599907ddee1b8887c45d2a911a3c64423dd7bb762596d936
 
+Package: dev.preloading.tubereplacer
+Name: TubeReplacer
+Version: 2.5.0
+Architecture: iphoneos-arm
+Description: iOS 10 TubeReplacer: personalized recommendations, persistent search history, channel avatars/view counts, and fixed feeds.
+Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
+Author: physmathdev
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
+Conflicts: bag.xml.tuberepair
+Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
+Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
+Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
+Installed-Size: 2817
+Filename: debs/dev.preloading.tubereplacer_2.5.0_iphoneos-arm.deb
+Size: 1035206
+MD5sum: 963e846fa020974c1c36a318f60ad233
+SHA1: 89a057d39c64d8cb04e3fa06f2c939de5a109c2e
+SHA256: 37234c748ef44ad05a6fc61b68c48b4f5e35b0a052fbd97d8883914c0935a11e
+
 Package: me.animego.ios
 Name: AnimeGO
 Version: 1.0-3

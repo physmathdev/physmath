@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TubeReplacer 2.0.1-5 — physmath</title>
+<title>TubeReplacer 2.5.0 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="TubeReplacer icon">
     <div>
       <h1>TubeReplacer</h1>
-      <div class="sub">Version 2.0.1-5 · physmath</div>
+      <div class="sub">Version 2.5.0 · physmath</div>
     </div>
   </div>
 
@@ -57,15 +57,16 @@
 
   <div class="card">
     <h2>About</h2>
-    <p>TubeReplacer brings the classic YouTube experience back to iOS 10 when the modern API no longer works. It fixes the broken Google sign-in flow and restores the signed-in home feed and subscriptions.</p>
+    <p>TubeReplacer brings the classic YouTube experience back to iOS 10 when the modern API no longer works. It fixes the broken Google sign-in flow, restores the signed-in home feed, subscriptions and recommendations, and keeps your search history between launches.</p>
   </div>
 
   <div class="card">
-    <h2>What's new in 2.0.1-5</h2>
+    <h2>What's new in 2.5.0</h2>
     <ul>
-      <li>Channel video rows now show the channel avatar and the real view count.</li>
-      <li>“What To Watch” (Интересное) now loads updates from your subscriptions instead of showing an empty page.</li>
-      <li>Includes the feed pagination crash fix from 2.0.1-4.</li>
+      <li>“What To Watch” (Интересное) now loads personalized YouTube recommendations instead of the subscription feed.</li>
+      <li>If YouTube has no personalized feed (for example, watch history is off), the tweak automatically falls back to global recommendations.</li>
+      <li>Search history now survives app restarts: the 30 most recent queries are restored when you open search again.</li>
+      <li>Keeps the channel avatar, view count and feed pagination fixes from 2.0.1-5.</li>
     </ul>
   </div>
 
@@ -74,6 +75,8 @@
     <ul>
       <li>Fixes Google sign-in (AppleSpell) so accounts can be added again</li>
       <li>Restores the signed-in home feed</li>
+      <li>Restores personalized recommendations, with a global fallback</li>
+      <li>Keeps search history across app launches</li>
       <li>Fixes subscriptions parsing</li>
       <li>Prevents crashes when scrolling into the next page of feeds</li>
       <li>Adds preferences for quality and debug options</li>
