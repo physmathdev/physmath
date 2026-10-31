@@ -54,12 +54,12 @@ Conflicts: bag.xml.tuberepair
 Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
 Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
 Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
-Installed-Size: 2817
+Installed-Size: 2856
 Filename: debs/dev.preloading.tubereplacer_2.5.0_iphoneos-arm.deb
-Size: 1035206
-MD5sum: 963e846fa020974c1c36a318f60ad233
-SHA1: 89a057d39c64d8cb04e3fa06f2c939de5a109c2e
-SHA256: 37234c748ef44ad05a6fc61b68c48b4f5e35b0a052fbd97d8883914c0935a11e
+Size: 1035654
+MD5sum: 7d68e1589ab2c70d3d901755abdebfee
+SHA1: bd81c4e57f013ccad39b52ba42a4eda78cf3e55c
+SHA256: 69b3910f32c1cf93c47125fa1225f9da09485a00fc0835582a56a8520088ad7b
 
 Package: me.animego.ios
 Name: AnimeGO
