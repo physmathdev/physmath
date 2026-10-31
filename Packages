@@ -56,10 +56,10 @@ Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
 Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
 Installed-Size: 2856
 Filename: debs/dev.preloading.tubereplacer_2.5.0_iphoneos-arm.deb
-Size: 1035654
-MD5sum: 7d68e1589ab2c70d3d901755abdebfee
-SHA1: bd81c4e57f013ccad39b52ba42a4eda78cf3e55c
-SHA256: 69b3910f32c1cf93c47125fa1225f9da09485a00fc0835582a56a8520088ad7b
+Size: 1036102
+MD5sum: 3daa6e3369850d5754e9826323210d09
+SHA1: fb146aeb704b38c96b1e7753d1531ea634626c83
+SHA256: 9118a7abf56247923597d5fc30aa5201da3c9093797c62ad14638719af2f14ed
 
 Package: me.animego.ios
 Name: AnimeGO
