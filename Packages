@@ -13,10 +13,10 @@ Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 3088
 Filename: debs/com.physmath.oldtube_1.0.0_iphoneos-arm.deb
-Size: 776846
-MD5sum: 10fa3c07ff316f8f2dcf7067b81fa211
-SHA1: c418df8598163941755c8e8bee95f1ff7b7c8817
-SHA256: 7e65119357f6d0dfdf60b01ea25aa4b797fdd7db2d4770346587918699dcee61
+Size: 776484
+MD5sum: d69ef68ebbc630fb7a848814e4c119e6
+SHA1: d9efc4c024f8d1faad96dd3de4e7c19d14509bf2
+SHA256: 99a19e5f71f42ed7b4cc498bc5bb5a308682027f7b5aff3ecc05c74e9c988963
 
 Package: crash-reporter
 Name: CrashReporter TXT
