@@ -43,6 +43,26 @@ SHA256: ae3f9e5dd1653188599907ddee1b8887c45d2a911a3c64423dd7bb762596d936
 
 Package: dev.preloading.tubereplacer
 Name: TubeReplacer
+Version: 2.5.0-1
+Architecture: iphoneos-arm
+Description: iOS 10 TubeReplacer: recommendation feed fixes, persistent search history, channel avatars/view counts, and fixed feeds.
+Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
+Author: physmathdev
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
+Conflicts: bag.xml.tuberepair
+Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
+Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
+Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
+Installed-Size: 2856
+Filename: debs/dev.preloading.tubereplacer_2.5.0-1_iphoneos-arm.deb
+Size: 1036536
+MD5sum: 8aae6ea0108387bcff00919e01519634
+SHA1: 64476046af0215f91ef2f36ac3e8b6adeaa119d3
+SHA256: de04f74c6decb8ceb0d4fb4fe1b3a2e0ac4f9f0508748ee53ff5e50ad3f84c41
+
+Package: dev.preloading.tubereplacer
+Name: TubeReplacer
 Version: 2.5.0
 Architecture: iphoneos-arm
 Description: iOS 10 TubeReplacer: personalized recommendations, persistent search history, channel avatars/view counts, and fixed feeds.

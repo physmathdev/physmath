@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TubeReplacer 2.5.0 — physmath</title>
+<title>TubeReplacer 2.5.0-1 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="TubeReplacer icon">
     <div>
       <h1>TubeReplacer</h1>
-      <div class="sub">Version 2.5.0 · physmath</div>
+      <div class="sub">Version 2.5.0-1 · physmath</div>
     </div>
   </div>
 
@@ -61,11 +61,12 @@
   </div>
 
   <div class="card">
-    <h2>What's new in 2.5.0</h2>
+    <h2>What's new in 2.5.0-1</h2>
     <ul>
-      <li>“What To Watch” (Интересное) now loads personalized YouTube recommendations instead of the subscription feed.</li>
-      <li>If YouTube has no personalized feed (for example, watch history is off), the tweak automatically falls back to global recommendations.</li>
-      <li>Search history now survives app restarts: the 30 most recent queries are restored when you open search again.</li>
+      <li>Fixed the recommendation feed showing only one video: every returned recommendation now gets its own unique group.</li>
+      <li>If “What To Watch” (Интересное) returns fewer than five videos, the tweak replaces it with a full global recommendation feed.</li>
+      <li>“What To Watch” loads personalized YouTube recommendations instead of the subscription feed.</li>
+      <li>Search history survives app restarts: the 30 most recent queries are restored when you open search again.</li>
       <li>Keeps the channel avatar, view count and feed pagination fixes from 2.0.1-5.</li>
     </ul>
   </div>
