@@ -7,17 +7,16 @@ Maintainer: physmath <physmathdev@users.noreply.github.com>
 Author: physmath <physmathdev@users.noreply.github.com>
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair, dev.preloading.tubereplacer
-Replaces: dev.preloading.tubereplacer
+Conflicts: bag.xml.tuberepair
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
-Installed-Size: 3072
+Installed-Size: 3088
 Filename: debs/com.physmath.oldtube_1.0.0_iphoneos-arm.deb
-Size: 768354
-MD5sum: 96b8f24f8bfb55babcd6e03817ad0a49
-SHA1: dbe8b1a7c935bf699f040769633aa9d9afbe2e56
-SHA256: 4ce8883e057d9ed01b26253ea177b32a1d853d8e4ec1dd4d567d846ea3998b11
+Size: 776846
+MD5sum: 10fa3c07ff316f8f2dcf7067b81fa211
+SHA1: c418df8598163941755c8e8bee95f1ff7b7c8817
+SHA256: 7e65119357f6d0dfdf60b01ea25aa4b797fdd7db2d4770346587918699dcee61
 
 Package: crash-reporter
 Name: CrashReporter TXT
