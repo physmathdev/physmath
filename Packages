@@ -1,3 +1,24 @@
+Package: com.physmath.oldtube
+Name: oldtube
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: oldtube: endless personal recommendations, watch history, persistent search history, and fixed feeds for the classic YouTube app (1.0.0-1.4.0 and 2.0.0-2.2.0).
+Maintainer: physmath <physmathdev@users.noreply.github.com>
+Author: physmath <physmathdev@users.noreply.github.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
+Conflicts: bag.xml.tuberepair, dev.preloading.tubereplacer
+Replaces: dev.preloading.tubereplacer
+Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
+Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
+Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
+Installed-Size: 3072
+Filename: debs/com.physmath.oldtube_1.0.0_iphoneos-arm.deb
+Size: 768354
+MD5sum: 96b8f24f8bfb55babcd6e03817ad0a49
+SHA1: dbe8b1a7c935bf699f040769633aa9d9afbe2e56
+SHA256: 4ce8883e057d9ed01b26253ea177b32a1d853d8e4ec1dd4d567d846ea3998b11
+
 Package: crash-reporter
 Name: CrashReporter TXT
 Version: 1.16.0-3
@@ -20,106 +41,6 @@ SHA1: afc2561a99fd3b5fb7fbb02fdcddb99cf2203081
 SHA256: c5e6ac578e822de759f0e5925671d8fdd6b01550cebc7a04d02308c8b4c67a33
 Pre-Depends: firmware (>=4.0)
 Priority: optional
-
-Package: dev.preloading.tubereplacer
-Name: TubeReplacer
-Version: 2.0.1-5
-Architecture: iphoneos-arm
-Description: iOS 10 TubeReplacer: fixes Google sign-in (AppleSpell), signed-in feeds, channel avatars and view counts, What To Watch, and feed pagination.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair
-Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
-Installed-Size: 2876
-Filename: debs/dev.preloading.tubereplacer_2.0.1-5_iphoneos-arm.deb
-Size: 1031746
-MD5sum: 73f682b69b858fc29301a5a30edaca75
-SHA1: 9281d0b99abe741e3138e5ec95970af863b55c56
-SHA256: ae3f9e5dd1653188599907ddee1b8887c45d2a911a3c64423dd7bb762596d936
-
-Package: dev.preloading.tubereplacer
-Name: TubeReplacer
-Version: 2.5.0-1
-Architecture: iphoneos-arm
-Description: iOS 10 TubeReplacer: recommendation feed fixes, persistent search history, channel avatars/view counts, and fixed feeds.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair
-Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
-Installed-Size: 2856
-Filename: debs/dev.preloading.tubereplacer_2.5.0-1_iphoneos-arm.deb
-Size: 1036536
-MD5sum: 8aae6ea0108387bcff00919e01519634
-SHA1: 64476046af0215f91ef2f36ac3e8b6adeaa119d3
-SHA256: de04f74c6decb8ceb0d4fb4fe1b3a2e0ac4f9f0508748ee53ff5e50ad3f84c41
-
-Package: dev.preloading.tubereplacer
-Name: TubeReplacer
-Version: 2.5.0-2
-Architecture: iphoneos-arm
-Description: iOS 10 TubeReplacer: personal recommendations, persistent search history, channel avatars/view counts, and fixed feeds.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair
-Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
-Installed-Size: 2856
-Filename: debs/dev.preloading.tubereplacer_2.5.0-2_iphoneos-arm.deb
-Size: 1041108
-MD5sum: 3377c43773e31683168bc8ab4dff1929
-SHA1: f1798d18d4d61ffb7b62ad31dc0b3ad107f17236
-SHA256: 1a278a53702bddce987b693704ce6829aa819c47ecd88b846ac3b9a212bafe1a
-
-Package: dev.preloading.tubereplacer
-Name: TubeReplacer
-Version: 2.5.0-3
-Architecture: iphoneos-arm
-Description: iOS 10 TubeReplacer: infinite personal recommendations, persistent search history, channel avatars/view counts, and fixed feeds.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair
-Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
-Installed-Size: 2856
-Filename: debs/dev.preloading.tubereplacer_2.5.0-3_iphoneos-arm.deb
-Size: 1044472
-MD5sum: a1305ed41a2b8c562d037a6e94edd67b
-SHA1: d46e1125b90af219621a7e83d0f803333c1ec51d
-SHA256: c1bb17cf170a183f1c6ef23059e26c5668323f49290bdbb6a71a7ab0be12fad4
-
-Package: dev.preloading.tubereplacer
-Name: TubeReplacer
-Version: 2.5.0
-Architecture: iphoneos-arm
-Description: iOS 10 TubeReplacer: personalized recommendations, persistent search history, channel avatars/view counts, and fixed feeds.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair
-Homepage: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Depiction: https://physmathdev.github.io/physmath/depictions/tubereplacer/
-Icon: file:///Library/PreferenceBundles/TubeReplacerPrefs.bundle/icon@full.png
-Installed-Size: 2856
-Filename: debs/dev.preloading.tubereplacer_2.5.0_iphoneos-arm.deb
-Size: 1036102
-MD5sum: 3daa6e3369850d5754e9826323210d09
-SHA1: fb146aeb704b38c96b1e7753d1531ea634626c83
-SHA256: 9118a7abf56247923597d5fc30aa5201da3c9093797c62ad14638719af2f14ed
 
 Package: me.animego.ios
 Name: AnimeGO

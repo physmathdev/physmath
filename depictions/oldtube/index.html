@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TubeReplacer 2.5.0-3 — physmath</title>
+<title>oldtube 1.0.0 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -41,10 +41,10 @@
   <a class="back" href="../../">← physmath repository</a>
 
   <div class="hero">
-    <img src="icon.png" alt="TubeReplacer icon">
+    <img src="icon.png" alt="oldtube icon">
     <div>
-      <h1>TubeReplacer</h1>
-      <div class="sub">Version 2.5.0-3 · physmath</div>
+      <h1>oldtube</h1>
+      <div class="sub">Version 1.0.0 · physmath</div>
     </div>
   </div>
 
@@ -57,32 +57,40 @@
 
   <div class="card">
     <h2>About</h2>
-    <p>TubeReplacer brings the classic YouTube experience back to iOS 10 when the modern API no longer works. It fixes the broken Google sign-in flow, restores the signed-in home feed, subscriptions and personal recommendations, and keeps your search history between launches.</p>
+    <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 through 2.2.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions, personal recommendations, search history and watch history.</p>
+    <p>There is no analytics, crash reporting or telemetry.</p>
   </div>
 
   <div class="card">
-    <h2>What's new in 2.5.0-3</h2>
+    <h2>What's new in 1.0.0</h2>
     <ul>
-      <li>“What To Watch” (Интересное) is now endless: when YouTube stops returning a next page, the tweak seeds more related videos from your own loaded recommendations.</li>
-      <li>The feed still never falls back to global “trending” search results, so stranger videos do not appear.</li>
-      <li>Short first pages are filled with related videos from your own feed or watch history, then your subscriptions.</li>
-      <li>Feed continuation requests return to the endpoint that produced the page (<code>/browse</code> or <code>/next</code>), so scrolling keeps working.</li>
-      <li>Every recommendation keeps its own unique group, so videos no longer collapse into one row.</li>
-      <li>Search history survives app restarts: the 30 most recent queries are restored when you open search again.</li>
-      <li>Keeps the channel avatar, view count and feed pagination fixes from 2.0.1-5.</li>
+      <li><strong>Endless personal recommendations.</strong> The “What To Watch” feed keeps loading related videos instead of stopping after the first page, and it never falls back to global trending results.</li>
+      <li><strong>Normal watch history.</strong> Watched videos are recorded through the app's playback tracking and appear in the History tab, with paging for older entries.</li>
+      <li><strong>YouTube 2.2.0 support.</strong> The tweak now covers all 2.x versions, including 2.1.0 and 2.2.0.</li>
+      <li><strong>Bundled n/sig solver.</strong> Playback signatures work offline, with an automatic weekly refresh when the solver is updated.</li>
+      <li><strong>Persistent search history.</strong> Recent searches survive app restarts.</li>
+      <li><strong>New identity.</strong> A new name, a new retro-TV icon and a cleaned-up preferences panel. Analytics, crash reporting and debug mail are gone.</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>What it does</h2>
     <ul>
-      <li>Fixes Google sign-in (AppleSpell) so accounts can be added again</li>
-      <li>Restores the signed-in home feed</li>
-      <li>Restores endless personal recommendations, with related/history/subscription fallbacks</li>
-      <li>Keeps search history across app launches</li>
-      <li>Fixes subscriptions parsing</li>
-      <li>Prevents crashes when scrolling into the next page of feeds</li>
-      <li>Adds preferences for quality and debug options</li>
+      <li>Fixes Google sign-in so accounts can be added again</li>
+      <li>Restores the signed-in home feed and personal recommendations</li>
+      <li>Loads subscription uploads, favorites, watch later and uploaded videos</li>
+      <li>Keeps watch history and search history between launches</li>
+      <li>Handles feed paging without crashes or duplicate rows</li>
+      <li>Provides preferences for playback quality and feed behavior</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>What doesn't work</h2>
+    <ul>
+      <li>Purchases</li>
+      <li>Age-restricted content in some regions</li>
+      <li>The Add Channel button, which opens a channel list with no sensible default</li>
     </ul>
   </div>
 
@@ -90,7 +98,7 @@
     <h2>Install</h2>
     <ol>
       <li>Add the source below in Cydia, Sileo or Zebra.</li>
-      <li>Search for <strong>TubeReplacer</strong> and install it.</li>
+      <li>Search for <strong>oldtube</strong> and install it.</li>
       <li>Respring the device.</li>
     </ol>
     <div class="source">
@@ -101,11 +109,12 @@
       <a class="btn" id="sileo" href="#">Add to Sileo</a>
       <a class="btn secondary" id="cydia" href="#">Add to Cydia</a>
     </div>
+    <p class="muted">Installing oldtube replaces the previous package automatically, so existing settings and history are kept.</p>
   </div>
 
   <div class="card">
     <h2>Requirements</h2>
-    <p>Jailbroken iOS 5.0 – 10.x, MobileSubstrate and PreferenceLoader. The package installs two tweak dylibs and a preference bundle.</p>
+    <p>Jailbroken iOS 5.0 – 10.x with MobileSubstrate and PreferenceLoader. Supported YouTube versions: 1.0.0, 1.0.1, 1.1.0, 1.2.1, 1.3.0, 1.4.0, 2.0.0, 2.1.0 and 2.2.0.</p>
   </div>
 
   <footer>physmath repository · <a href="../../">physmathdev.github.io/physmath</a></footer>

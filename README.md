@@ -19,7 +19,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [TubeReplacer](depictions/tubereplacer/) | 2.5.0-3 | iOS 10 TubeReplacer: endless personal recommendations, persistent search history, channel avatars/view counts, and fixed feeds. |
+| [oldtube](depictions/oldtube/) | 1.0.0 | iOS 5–10 classic YouTube tweak: endless personal recommendations, watch history, persistent search history and support for YouTube 1.0.0–1.4.0 and 2.0.0–2.2.0. |
 | [AnimeGO](depictions/animego/) | 1.0-3 | AnimeGO client for iOS 4.3–10.3.4, repackaged from the signed IPA. Installs to `/Applications`. |
 | [CrashReporter TXT](depictions/crashreporter/) | 1.16.0-3 | CrashReporter with a TXT export button added by physmathdev. Saves the crash log and syslog to `/var/mobile/Documents/CrashReporter`. |
 
