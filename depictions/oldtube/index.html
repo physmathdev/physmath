@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.0.3 — physmath</title>
+<title>oldtube 1.0.4 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.0.3 · physmath</div>
+      <div class="sub">Version 1.0.4 · physmath</div>
     </div>
   </div>
 
@@ -62,12 +62,12 @@
   </div>
 
   <div class="card">
-    <h2>What's new in 1.0.3</h2>
+    <h2>What's new in 1.0.4</h2>
     <ul>
       <li><strong>720p in the player.</strong> A quality button in the player opens Auto / 720p / 480p / 360p. Switching is instant and does not restart playback.</li>
       <li><strong>Fixed History crash.</strong> Local watch history is merged into the real History page instead of replacing it, and entries without a channel no longer trigger a broken channel lookup.</li>
       <li><strong>YouTube included.</strong> The package now installs YouTube 2.0.0 itself, with the oldtube icon, so one install sets everything up.</li>
-      <li><strong>Crash logging.</strong> If the app still crashes, a report is written to <code>/var/mobile/Media/oldtube_crash.log</code>.</li>
+      <li><strong>Crash logging.</strong> If the app still crashes, a report is written to the app's Documents folder as <code>oldtube_crash.log</code> (and to <code>/var/mobile/Media/oldtube_crash.log</code> when allowed).</li>
     </ul>
   </div>
 
