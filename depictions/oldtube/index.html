@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.0.5 — physmath</title>
+<title>oldtube 1.0.6 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.0.5 · physmath</div>
+      <div class="sub">Version 1.0.6 · physmath</div>
     </div>
   </div>
 
@@ -59,6 +59,15 @@
     <h2>About</h2>
     <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions, personal recommendations and watch history.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new in 1.0.6</h2>
+    <ul>
+      <li><strong>Crash reports on stderr.</strong> The crash handler now mirrors its report to stderr, so the backtrace can be read with <code>idevicesyslog</code> even though the app container is not reachable over AFC.</li>
+      <li><strong>Startup log probe.</strong> The crash log is created at launch, so log collection no longer depends on a crash happening first.</li>
+      <li><strong>History.</strong> Investigation of the remaining History crash continues; this build is a diagnostic step.</li>
+    </ul>
   </div>
 
   <div class="card">
