@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.0.4 — physmath</title>
+<title>oldtube 1.0.5 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.0.4 · physmath</div>
+      <div class="sub">Version 1.0.5 · physmath</div>
     </div>
   </div>
 
@@ -59,6 +59,15 @@
     <h2>About</h2>
     <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions, personal recommendations and watch history.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new in 1.0.5</h2>
+    <ul>
+      <li><strong>History crash fixed properly.</strong> The merged History page now always holds a <em>mutable</em> entry list, so the feed controller can no longer raise “mutating method sent to immutable object”. The local-only fallback reuses the same page class the app's parser produced.</li>
+      <li><strong>More reliable crash logging.</strong> The crash handler now runs on a real alternate signal stack, so even a stack-overflow crash produces a readable <code>oldtube_crash.log</code>.</li>
+      <li><strong>iOS 5–10 only.</strong> The bundled YouTube 2.0.0 is 32-bit (armv7); iOS 11+ cannot run 32-bit apps, so this package intentionally stays on iOS 5–10.</li>
+    </ul>
   </div>
 
   <div class="card">
