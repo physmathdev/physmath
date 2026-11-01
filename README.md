@@ -19,7 +19,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [oldtube](depictions/oldtube/) | 1.0.2 | iOS 5–10 classic YouTube tweak: endless personal recommendations, watch history, and support for YouTube 1.0.0–1.4.0 and 2.0.0. |
+| [oldtube](depictions/oldtube/) | 1.0.3 | iOS 5–10 classic YouTube tweak with 720p player menu, watch history and bundled YouTube 2.0.0. |
 
 ## Adding or updating packages
 
