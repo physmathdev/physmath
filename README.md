@@ -19,7 +19,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [oldtube](depictions/oldtube/) | 1.0.6 | iOS 5–10 classic YouTube tweak with 720p player menu, watch history and bundled YouTube 2.0.0. |
+| [oldtube](depictions/oldtube/) | 1.0.7 | iOS 5–10 classic YouTube tweak with 720p player menu, watch history and bundled YouTube 2.0.0. |
 
 ## Adding or updating packages
 
