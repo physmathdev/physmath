@@ -1,6 +1,6 @@
 Package: com.physmath.oldtube
 Name: oldtube
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: oldtube: endless personal recommendations, watch history, and fixed feeds for the classic YouTube app (1.0.0-1.4.0 and 2.0.0).
 Maintainer: physmath <physmathdev@users.noreply.github.com>
@@ -12,11 +12,11 @@ Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 3120
-Filename: debs/com.physmath.oldtube_1.0.0_iphoneos-arm.deb
-Size: 797970
-MD5sum: eb106613fd0a99fbca2108d9f69ccf25
-SHA1: edf62d3d64b8fdf8d9bcc8a466567b7e8174d4c4
-SHA256: 83e5e742bf87c0e8a392025e97b62f74ccaa49ad9ec577c32f337f87c9442744
+Filename: debs/com.physmath.oldtube_1.0.1_iphoneos-arm.deb
+Size: 797874
+MD5sum: 82835ad6577288828d1f762bc5bc803c
+SHA1: 7b33c69aa7f5ef799ff44b99d9f2e3c9042b7bb5
+SHA256: e8fe0f6a0afea67a91fc043fe387af0d9d8ac8c5ccfcbb6550d5c066af0277f8
 
 Package: crash-reporter
 Name: CrashReporter TXT
