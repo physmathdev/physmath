@@ -1,6 +1,6 @@
 Package: com.physmath.oldtube
 Name: oldtube
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Description: oldtube: endless personal recommendations, watch history, and fixed feeds for the classic YouTube app (1.0.0-1.4.0 and 2.0.0).
 Maintainer: physmath <physmathdev@users.noreply.github.com>
@@ -11,52 +11,9 @@ Conflicts: bag.xml.tuberepair
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
-Installed-Size: 3120
-Filename: debs/com.physmath.oldtube_1.0.1_iphoneos-arm.deb
-Size: 797874
-MD5sum: 82835ad6577288828d1f762bc5bc803c
-SHA1: 7b33c69aa7f5ef799ff44b99d9f2e3c9042b7bb5
-SHA256: e8fe0f6a0afea67a91fc043fe387af0d9d8ac8c5ccfcbb6550d5c066af0277f8
-
-Package: crash-reporter
-Name: CrashReporter TXT
-Version: 1.16.0-3
-Architecture: iphoneos-arm
-Description: CrashReporter with a TXT export button added by physmathdev.
- The TXT button on the crash details screen saves the crash log and syslog as
- .txt files to /var/mobile/Documents/CrashReporter and opens a share sheet.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: System
-Depends: coreutils, dpkg, grep, jp.ashikase.libcrashreport (>= 1.1.0), jp.ashikase.libpackageinfo (>= 1.1.0), jp.ashikase.techsupport (>= 1.5.0), mobilesubstrate, preferenceloader
-Homepage: https://physmathdev.github.io/physmath/depictions/crashreporter/
-Depiction: https://physmathdev.github.io/physmath/depictions/crashreporter/
-Icon: https://physmathdev.github.io/physmath/depictions/crashreporter/icon.png
-Installed-Size: 1460
-Filename: debs/crash-reporter_1.16.0-3_iphoneos-arm.deb
-Size: 358196
-MD5sum: 5cc232556cdb5c751b5e8e78efb9641d
-SHA1: afc2561a99fd3b5fb7fbb02fdcddb99cf2203081
-SHA256: c5e6ac578e822de759f0e5925671d8fdd6b01550cebc7a04d02308c8b4c67a33
-Pre-Depends: firmware (>=4.0)
-Priority: optional
-
-Package: me.animego.ios
-Name: AnimeGO
-Version: 1.0-3
-Architecture: iphoneos-arm
-Description: AnimeGO client for iOS 4.3-10.3.4, repackaged from the signed IPA for Cydia.
-Maintainer: physmathdev <321007254+physmathdev@users.noreply.github.com>
-Author: physmathdev
-Section: Applications
-Depends: firmware (>= 4.3), firmware (<= 10.3.4), uikittools
-Homepage: https://physmathdev.github.io/physmath/depictions/animego/
-Depiction: https://physmathdev.github.io/physmath/depictions/animego/
-Icon: https://physmathdev.github.io/physmath/depictions/animego/icon.png
-Installed-Size: 319
-Filename: debs/me.animego.ios_1.0-3_iphoneos-arm.deb
-Size: 194584
-MD5sum: aec5d943bf9a983e440ff3837ac50891
-SHA1: 10000fa4bd3ab835727ead7509e4aad81910e29f
-SHA256: fa2a1d663ba8e886c77df0fe3b229f9a0a2f435678662c4b0bc9705e1fcb37c7
-Priority: optional
+Installed-Size: 3264
+Filename: debs/com.physmath.oldtube_1.0.2_iphoneos-arm.deb
+Size: 953722
+MD5sum: 45439ac5bc611d6a8434dc96c6981824
+SHA1: ee29ebb1ccd7c938a186163ada5152da7faf502d
+SHA256: 85bfb95d19729ac7bff7496c2ee6c906598e105df470f4022118019f519e4ac3

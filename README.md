@@ -19,21 +19,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [oldtube](depictions/oldtube/) | 1.0.0 | iOS 5–10 classic YouTube tweak: endless personal recommendations, watch history, persistent search history and support for YouTube 1.0.0–1.4.0 and 2.0.0–2.2.0. |
-| [AnimeGO](depictions/animego/) | 1.0-3 | AnimeGO client for iOS 4.3–10.3.4, repackaged from the signed IPA. Installs to `/Applications`. |
-| [CrashReporter TXT](depictions/crashreporter/) | 1.16.0-3 | CrashReporter with a TXT export button added by physmathdev. Saves the crash log and syslog to `/var/mobile/Documents/CrashReporter`. |
-
-## Apps (IPA)
-
-| App | Version | Requirements | Download |
-| --- | --- | --- | --- |
-| AnimeGO | 1.0-3 | iOS 4.3–10.3.4 | [Cydia package](depictions/animego/) `me.animego.ios` · [IPA](ipa/AnimeGO-ios7-signed.ipa) · [OTA install](itms-services://?action=download-manifest&url=https://physmathdev.github.io/physmath/ipa/manifest.plist) |
-
-The same app is available as a Cydia package (`me.animego.ios`), which installs
-`AnimeGO.app` into `/Applications` and runs `uicache` after installation. The
-IPA is kept for sideloading and OTA installation. The app bundle is unsigned,
-so launching it requires AppSync (AppSync Unified) on the device, as usual for
-repackaged IPAs.
+| [oldtube](depictions/oldtube/) | 1.0.2 | iOS 5–10 classic YouTube tweak: endless personal recommendations, watch history, and support for YouTube 1.0.0–1.4.0 and 2.0.0. |
 
 ## Adding or updating packages
 
@@ -66,7 +52,6 @@ sizes and checksums. Only the Python 3 standard library is required.
 ├── Release              # repo metadata (generated)
 ├── debs/                # .deb packages
 ├── depictions/          # package description pages
-├── ipa/                 # .ipa apps and OTA manifest
 ├── index.html           # web landing page with "Add to ..." links
 └── update_repo.py       # index generator
 ```
