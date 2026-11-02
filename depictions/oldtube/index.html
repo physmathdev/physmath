@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.2.1 — physmath</title>
+<title>oldtube 1.2.2 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.2.1 · physmath</div>
+      <div class="sub">Version 1.2.2 · physmath</div>
     </div>
   </div>
 
@@ -59,6 +59,16 @@
     <h2>About</h2>
     <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions, personal recommendations and watch history.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new in 1.2.2</h2>
+    <ul>
+      <li><strong>Quality menu in the player bar.</strong> A gear button now sits next to the subtitles (CC) button, like in current YouTube. It opens a dark bottom sheet with Auto / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height really limits the adaptive stream ladder, so it takes effect the next time a video is opened.</li>
+      <li><strong>Playback no longer stalls when YouTube omits the selected formats.</strong> Sometimes the server's playback cookie names no video/audio format (itag 0). oldtube now reads the formats from the media headers that actually arrive, instead of dropping every media part and failing with “not enough data to start stream”.</li>
+      <li><strong>Google sign-in fixed on iOS 5/6.</strong> The embedded sign-in web view no longer crashes on its WebThread: the User-Agent override used to call the original method through a selector with a different signature.</li>
+      <li><strong>The quality sheet rotates correctly.</strong> It is attached to the player's rotated view hierarchy instead of the window, so it stays level in landscape and portrait.</li>
+    </ul>
   </div>
 
   <div class="card">
