@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.0.8 — physmath</title>
+<title>oldtube 1.0.9 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -44,7 +44,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.0.8 · physmath</div>
+      <div class="sub">Version 1.0.9 · physmath</div>
     </div>
   </div>
 
@@ -59,6 +59,14 @@
     <h2>About</h2>
     <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions, personal recommendations and watch history.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new in 1.0.9</h2>
+    <ul>
+      <li><strong>History actually opens.</strong> The new backtrace showed the crash happened inside oldtube's own POST response wrapper, where the app tried to invoke a block that had already been released (<code>SIGSEGV at 0x0</code>). The wrapper is now applied <em>only</em> to the requests whose responses oldtube really caches (subscriptions and channels). Everything else — including the History request — is handed to the client untouched, so there is nothing left to crash there.</li>
+      <li><strong>Better crash evidence.</strong> The crash log now dumps the CPU registers (r0–r12, sp, lr, pc) alongside the backtrace, and the response wrapper records what it did, so any future crash can be identified immediately.</li>
+    </ul>
   </div>
 
   <div class="card">
