@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.3.0 — physmath</title>
+<title>oldtube 1.3.1 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.3.0 · physmath</div>
+      <div class="sub">Version 1.3.1 · physmath</div>
     </div>
   </div>
 
@@ -70,6 +70,10 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.3.1</h2>
+    <ul>
+      <li><strong>Sign-in no longer crashes on iOS 7–10.</strong> The embedded sign-in browser's JavaScript engine was trying to use its JIT compiler, which faults on these systems a couple of seconds after Google's page loads and takes YouTube down with it. It now runs in the interpreter, so the page loads and submits normally on iOS 7, 8, 9 and 10.</li>
+    </ul>
     <h2>What's new in 1.3.0</h2>
     <ul>
       <li><strong>Google sign-in now works on iOS 7–10 too.</strong> Sign-in runs in an embedded modern browser instead of the system web view, which Google refuses to authenticate. That browser is now bundled as a shared package for every supported iOS version, so sign-in works on iOS 5, 6, 7, 8, 9 and 10 alike.</li>

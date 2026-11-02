@@ -19,8 +19,8 @@ Add it in Cydia, Sileo, Zebra or Installer.
 
 | Package | Version | Description |
 | --- | --- | --- |
-| [oldtube](depictions/oldtube/) | 1.3.0 | Classic YouTube tweak for **iOS 7–10**, with an in-player quality menu next to subtitles, working Google sign-in, reliable playback, and bundled YouTube 2.0.0. |
-| [oldtube (iOS 5–6)](depictions/oldtube/) | 1.3.0 | Same tweak for **iOS 5–6**. Conflicts with the iOS 7–10 package; install the one that matches your iOS version. |
+| [oldtube](depictions/oldtube/) | 1.3.1 | Classic YouTube tweak for **iOS 7–10**, with an in-player quality menu next to subtitles, working Google sign-in, reliable playback, and bundled YouTube 2.0.0. |
+| [oldtube (iOS 5–6)](depictions/oldtube/) | 1.3.1 | Same tweak for **iOS 5–6**. Conflicts with the iOS 7–10 package; install the one that matches your iOS version. |
 | oldtube LightKit | 1.0.0 | Shared embedded WebKit browser that oldtube uses for the Google sign-in flow. Pulled in automatically as a dependency. |
 
 ## Adding or updating packages
