@@ -7,11 +7,11 @@ Architectures: iphoneos-arm
 Components: main
 Description: physmath Cydia repository
 MD5Sum:
- 94483d1e80d9d7313169d77ee14b8cd1 3146 Packages
- 970a62b94249e17ff20443e1a72deded 1027 Packages.gz
+ c7b267446e29a3a6e150715ae20fd73d 3224 Packages
+ cee81a7f73b8b0d1661666c241a92ef1 1052 Packages.gz
 SHA1:
- 8339ec053ac04f0e3f32d13131d95ffb327d2a76 3146 Packages
- a47625fbb90c4d8ff4b9302afb8ef31162ab5053 1027 Packages.gz
+ eacda1a0821225b69eef6b7af0ccdc0e523a3c10 3224 Packages
+ 52e8fa7a3142b7df5b124af50ba4b1b79573f52d 1052 Packages.gz
 SHA256:
- 1fa1229649ed8858331cfa26fe09661bd4c88c7954a8f826e32b675f8f567891 3146 Packages
- aebec9a83a1780efe164457bef8c51b92c6002ba95337b7eb586bd8d536a34af 1027 Packages.gz
+ 823dbe8b5e9c3da2ccdf28b53f0dddda8a719482fbaf1517db41c7288d149a30 3224 Packages
+ 821a12f3ee6ca0b8a9be69fca7c17ce16c34438bc250a36072a231e175d1d687 1052 Packages.gz

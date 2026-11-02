@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.3.1 — physmath</title>
+<title>oldtube 1.5.0 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.3.1 · physmath</div>
+      <div class="sub">Version 1.5.0 · physmath</div>
     </div>
   </div>
 
@@ -70,6 +70,13 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.5.0</h2>
+    <ul>
+      <li><strong>Dark theme.</strong> The whole app — feeds, lists, cards, player chrome and the navigation bars — now uses a proper dark palette with light text. It is on by default and can be switched off in Settings → oldtube → Misc Settings → Dark Theme (relaunch YouTube after changing it).</li>
+      <li><strong>1080p quality option.</strong> The in-player quality menu now offers 1080p, for streams whose adaptive ladder actually advertises it. On videos that only go up to 720p, picking 1080p simply plays the best available.</li>
+      <li><strong>The app is now called oldtube.</strong> The home-screen icon is the oldtube icon instead of the stock YouTube one, and the name under it is <strong>oldtube</strong>.</li>
+      <li><strong>A proper launch screen.</strong> While the app starts you now see a dark screen with the oldtube wordmark instead of the stock YouTube splash.</li>
+    </ul>
     <h2>What's new in 1.3.1</h2>
     <ul>
       <li><strong>Sign-in no longer crashes on iOS 7–10.</strong> The embedded sign-in browser's JavaScript engine was trying to use its JIT compiler, which faults on these systems a couple of seconds after Google's page loads and takes YouTube down with it. It now runs in the interpreter, so the page loads and submits normally on iOS 7, 8, 9 and 10.</li>
@@ -88,10 +95,10 @@
     <ul>
       <li><strong>Playback no longer freezes after the first minute or two.</strong> The player now locks on to the exact format it is playing, so YouTube can no longer switch to a format the local stream cannot serve.</li>
       <li><strong>Playback no longer stalls when YouTube omits the selected formats.</strong> Formats are read from the media headers that actually arrive instead of being dropped.</li>
-      <li><strong>Quality menu in the player bar.</strong> A gear button opens a dark bottom sheet with Auto / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height limits the adaptive stream ladder and takes effect the next time a video is opened.</li>
+      <li><strong>Quality menu in the player bar.</strong> A gear button opens a dark bottom sheet with Auto / 1080p / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height limits the adaptive stream ladder and takes effect the next time a video is opened.</li>
       <li><strong>Endless personal recommendations.</strong> The "What To Watch" feed keeps loading related videos instead of stopping after the first page.</li>
       <li><strong>Bundled n/sig solver.</strong> Playback signatures work offline, with an automatic weekly refresh.</li>
-      <li><strong>New identity.</strong> A retro-TV icon, a cleaned-up preferences panel, and no analytics or debug mail.</li>
+      <li><strong>New identity.</strong> The oldtube icon on the home screen, the oldtube name, an oldtube launch screen, a cleaned-up preferences panel, and no analytics or debug mail.</li>
     </ul>
   </div>
 
