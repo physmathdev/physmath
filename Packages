@@ -1,20 +1,59 @@
 Package: com.physmath.oldtube
 Name: oldtube
-Version: 1.2.2
+Version: 1.3.0
 Architecture: iphoneos-arm
-Description: oldtube: endless personal recommendations, watch history, fixed feeds, and an in-player quality menu for classic YouTube. This package also installs the YouTube 2.0.0 app.
+Description: oldtube for iOS 7-10: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-2.0.0), with an in-player quality menu next to the subtitle button and working Google sign-in.
 Maintainer: physmath <physmathdev@users.noreply.github.com>
 Author: physmath <physmathdev@users.noreply.github.com>
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 11.0)
-Conflicts: bag.xml.tuberepair, dev.preloading.tubereplacer
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 7.0), firmware (<< 11.0), com.physmath.oldtube.lightkit
+Conflicts: com.physmath.oldtube.ios6, bag.xml.tuberepair
 Replaces: com.google.ios.youtube, dev.preloading.tubereplacer
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 27316
-Filename: debs/com.physmath.oldtube_1.2.2_iphoneos-arm.deb
-Size: 8500502
-MD5sum: 9633d38c4b9a7d4ae9bf1bbe3f03fbd9
-SHA1: 0c8db2db8d4631c7b17d602769ed588906cee83d
-SHA256: 825afe27f4e338917fa11ac6971029fa3be6cbcb4656eaf740d5083c16088947
+Filename: debs/com.physmath.oldtube_1.3.0_iphoneos-arm.deb
+Size: 8501512
+MD5sum: b22c9a6d43aaa1b2d8fa534b54a69078
+SHA1: 1970973d5065404a1d162adc9b0fa38ab97c93a8
+SHA256: 63391debad64c26e77e39b885f3f452988a474fcf41bc45838debc01ec92e09f
+
+Package: com.physmath.oldtube.ios6
+Name: oldtube (iOS 5-6)
+Version: 1.3.0
+Architecture: iphoneos-arm
+Description: oldtube for iOS 5-6: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-2.0.0), with an in-player quality menu next to the subtitle button and working Google sign-in.
+Maintainer: physmath <physmathdev@users.noreply.github.com>
+Author: physmath <physmathdev@users.noreply.github.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 7.0), com.physmath.oldtube.lightkit
+Conflicts: com.physmath.oldtube, bag.xml.tuberepair
+Replaces: com.physmath.oldtube, com.google.ios.youtube, dev.preloading.tubereplacer
+Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
+Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
+Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
+Installed-Size: 27316
+Filename: debs/com.physmath.oldtube.ios6_1.3.0_iphoneos-arm.deb
+Size: 8503142
+MD5sum: c43eb6ed48cbc0d79cbf2ac8fe79b3ef
+SHA1: d1cf0d2fb8786b100c8921cab995a408534f1256
+SHA256: 3e1b2622ddb105946379cd4d4d09083519804907bcae871d84169e535b0a2410
+
+Package: com.physmath.oldtube.lightkit
+Name: oldtube LightKit
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Embedded modern WebKit browser used by oldtube for the Google sign-in flow on the classic YouTube app (iOS 5-10).
+Maintainer: physmath <physmathdev@users.noreply.github.com>
+Author: physmath <physmathdev@users.noreply.github.com>
+Section: Tweaks
+Depends: firmware (>= 5.0), firmware (<< 11.0)
+Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
+Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
+Installed-Size: 85400
+Filename: debs/com.physmath.oldtube.lightkit_1.0.0_iphoneos-arm.deb
+Size: 26518400
+MD5sum: c542a55991d596668acdc4a167fd9799
+SHA1: c57fb9309d0bb44937e26e1161992787b4190250
+SHA256: 046ac001bc93ad76580dda4236f3d23523d43956471ebee62f0856667cc769c4

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.2.2 — physmath</title>
+<title>oldtube 1.3.0 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -34,6 +34,7 @@
   .muted { color: #6b6b76; font-size: 13px; }
   footer { margin-top: 34px; text-align: center; color: #6b6b76; font-size: 13px; }
   a { color: #6c5ce7; }
+  code { font-size: 13px; }
 </style>
 </head>
 <body>
@@ -44,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Version 1.2.2 · physmath</div>
+      <div class="sub">Version 1.3.0 · physmath</div>
     </div>
   </div>
 
@@ -57,104 +58,45 @@
 
   <div class="card">
     <h2>About</h2>
-    <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions, personal recommendations and watch history.</p>
+    <p>oldtube keeps the classic Google YouTube app working without a backend server. It supports YouTube 1.0.0 through 1.4.0 and 2.0.0 on iOS 5 through iOS 10, and restores sign-in, the signed-in home feed, subscriptions and personal recommendations.</p>
+    <p>Watch history is <strong>not</strong> working right now and is not claimed as a feature.</p>
+    <p>Because the sign-in browser differs between the two OS ranges, oldtube ships as two packages:</p>
+    <ul>
+      <li><strong>oldtube</strong> (<code>com.physmath.oldtube</code>) — iOS 7.0 – 10.x.</li>
+      <li><strong>oldtube (iOS 5–6)</strong> (<code>com.physmath.oldtube.ios6</code>) — iOS 5.0 – 6.x.</li>
+    </ul>
+    <p>Both automatically install a shared <strong>LightKit</strong> package (<code>com.physmath.oldtube.lightkit</code>), the embedded modern browser that Google sign-in runs in. Install the package that matches your iOS version; the two conflict, so only one is present.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
   </div>
 
   <div class="card">
-    <h2>What's new in 1.2.2</h2>
+    <h2>What's new in 1.3.0</h2>
     <ul>
-      <li><strong>Quality menu in the player bar.</strong> A gear button now sits next to the subtitles (CC) button, like in current YouTube. It opens a dark bottom sheet with Auto / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height really limits the adaptive stream ladder, so it takes effect the next time a video is opened.</li>
-      <li><strong>Playback no longer stalls when YouTube omits the selected formats.</strong> Sometimes the server's playback cookie names no video/audio format (itag 0). oldtube now reads the formats from the media headers that actually arrive, instead of dropping every media part and failing with “not enough data to start stream”.</li>
-      <li><strong>Google sign-in fixed on iOS 5/6.</strong> The embedded sign-in web view no longer crashes on its WebThread: the User-Agent override used to call the original method through a selector with a different signature.</li>
-      <li><strong>The quality sheet rotates correctly.</strong> It is attached to the player's rotated view hierarchy instead of the window, so it stays level in landscape and portrait.</li>
+      <li><strong>Google sign-in now works on iOS 7–10 too.</strong> Sign-in runs in an embedded modern browser instead of the system web view, which Google refuses to authenticate. That browser is now bundled as a shared package for every supported iOS version, so sign-in works on iOS 5, 6, 7, 8, 9 and 10 alike.</li>
+      <li><strong>Two packages instead of one.</strong> iOS 5–6 and iOS 7–10 are built and packaged separately, with the right browser for each range. The iOS 7–10 package upgrades existing installs seamlessly.</li>
+      <li><strong>The player quality gear no longer overlaps the time.</strong> The gear sits between the elapsed/total time and the subtitles (CC) button. The total-time label ("1:10" and similar) is shifted left by exactly the room the gear needs — including in landscape and while playback keeps refreshing the label — so nothing is covered any more.</li>
+      <li><strong>Honest descriptions.</strong> The claim that watch history works has been removed. History is not being fixed in this release.</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>What's new in 1.2.1</h2>
+    <h2>Earlier fixes still included</h2>
     <ul>
-      <li><strong>Playback no longer freezes after the first minute or two.</strong> The player used to ask YouTube for every available video and audio format at once, but its local stream can only ever serve the one format it started with. YouTube would quietly switch to a different format mid-video, the new media parts no longer matched the running stream and were dropped, and playback stalled as soon as the initial buffer ran out. The player now locks on to the exact format it is playing, so longer videos keep going instead of freezing.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.1.0</h2>
-    <ul>
-      <li><strong>Sign-in works again (fixes “This browser or app may not be secure”).</strong> The sign-in screen runs inside an embedded web view, and it used to identify itself with the YouTube app's own User-Agent. Google treats that as an insecure embedded browser and refuses to authenticate it. The web view now presents a normal mobile Safari identity, so Google's sign-in flow completes. This affects only the web view — the app's API requests still send the client User-Agent they always did.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.9</h2>
-    <ul>
-      <li><strong>History actually opens.</strong> The new backtrace showed the crash happened inside oldtube's own POST response wrapper, where the app tried to invoke a block that had already been released (<code>SIGSEGV at 0x0</code>). The wrapper is now applied <em>only</em> to the requests whose responses oldtube really caches (subscriptions and channels). Everything else — including the History request — is handed to the client untouched, so there is nothing left to crash there.</li>
-      <li><strong>Better crash evidence.</strong> The crash log now dumps the CPU registers (r0–r12, sp, lr, pc) alongside the backtrace, and the response wrapper records what it did, so any future crash can be identified immediately.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.8</h2>
-    <ul>
-      <li><strong>History crash fixed.</strong> The watchdog backtrace showed the app invoking a response block through a NULL pointer (<code>SIGSEGV at 0x0</code>). The classic client only <em>retains</em> response blocks instead of copying them, so the wrapper oldtube passed for History went stale on the stack before the (slow) response arrived. Response blocks are now real heap blocks, which removes the crash at the source.</li>
-      <li><strong>Emergency History mode.</strong> New switch under <em>Settings → oldtube → Experimental Settings</em>. When enabled, History is served purely from the locally recorded watch history and never touches the request path, so the screen is guaranteed to open even if a future YouTube change breaks the normal flow again.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.7</h2>
-    <ul>
-      <li><strong>History diagnostics.</strong> When the History screen is loaded, the exact page it receives (entry count and classes, <code>totalResults</code>/<code>entriesPerPage</code>, and sample video IDs) is now written to <code>/var/mobile/Media/oldtube_history.log</code> and to the system log.</li>
-      <li><strong>Real backtraces.</strong> The YouTube app installs its own crash reporter at launch, which was replacing oldtube's. That reporter is now disabled and oldtube's signal/exception handler is re-armed right before the History page loads, so the crash finally produces a readable backtrace in <code>/var/mobile/Media/oldtube_crash.log</code>.</li>
-      <li><strong>History fix in progress.</strong> This build is a diagnostic step to pin the remaining History crash precisely; no other behaviour changed.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.6</h2>
-    <ul>
-      <li><strong>Crash reports on stderr.</strong> The crash handler now mirrors its report to stderr, so the backtrace can be read with <code>idevicesyslog</code> even though the app container is not reachable over AFC.</li>
-      <li><strong>Startup log probe.</strong> The crash log is created at launch, so log collection no longer depends on a crash happening first.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.5</h2>
-    <ul>
-      <li><strong>History crash fixed properly.</strong> The merged History page now always holds a <em>mutable</em> entry list, so the feed controller can no longer raise “mutating method sent to immutable object”. The local-only fallback reuses the same page class the app's parser produced.</li>
-      <li><strong>More reliable crash logging.</strong> The crash handler now runs on a real alternate signal stack, so even a stack-overflow crash produces a readable <code>oldtube_crash.log</code>.</li>
-      <li><strong>iOS 5–10 only.</strong> The bundled YouTube 2.0.0 is 32-bit (armv7); iOS 11+ cannot run 32-bit apps, so this package intentionally stays on iOS 5–10.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.4</h2>
-    <ul>
-      <li><strong>720p in the player.</strong> A quality button in the player opens Auto / 720p / 480p / 360p. Switching is instant and does not restart playback.</li>
-      <li><strong>Fixed History crash.</strong> Local watch history is merged into the real History page instead of replacing it, and entries without a channel no longer trigger a broken channel lookup.</li>
-      <li><strong>YouTube included.</strong> The package now installs YouTube 2.0.0 itself, with the oldtube icon, so one install sets everything up.</li>
-      <li><strong>Crash logging.</strong> If the app still crashes, a report is written to the app's Documents folder as <code>oldtube_crash.log</code> (and to <code>/var/mobile/Media/oldtube_crash.log</code> when allowed).</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>What's new in 1.0.2</h2>
-    <ul>
-      <li><strong>Endless personal recommendations.</strong> The “What To Watch” feed keeps loading related videos instead of stopping after the first page, and it never falls back to global trending results.</li>
-      <li><strong>Normal watch history.</strong> Watched videos are recorded through the app's playback tracking and appear in the History tab, with paging for older entries.</li>
-      <li><strong>Focused YouTube 2.x support.</strong> The tweak covers YouTube 1.0.0–1.4.0 and 2.0.0.</li>
-      <li><strong>Bundled n/sig solver.</strong> Playback signatures work offline, with an automatic weekly refresh when the solver is updated.</li>
-      <li><strong>New identity.</strong> A new name, a new retro-TV icon and a cleaned-up preferences panel. Analytics, crash reporting and debug mail are gone.</li>
+      <li><strong>Playback no longer freezes after the first minute or two.</strong> The player now locks on to the exact format it is playing, so YouTube can no longer switch to a format the local stream cannot serve.</li>
+      <li><strong>Playback no longer stalls when YouTube omits the selected formats.</strong> Formats are read from the media headers that actually arrive instead of being dropped.</li>
+      <li><strong>Quality menu in the player bar.</strong> A gear button opens a dark bottom sheet with Auto / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height limits the adaptive stream ladder and takes effect the next time a video is opened.</li>
+      <li><strong>Endless personal recommendations.</strong> The "What To Watch" feed keeps loading related videos instead of stopping after the first page.</li>
+      <li><strong>Bundled n/sig solver.</strong> Playback signatures work offline, with an automatic weekly refresh.</li>
+      <li><strong>New identity.</strong> A retro-TV icon, a cleaned-up preferences panel, and no analytics or debug mail.</li>
     </ul>
   </div>
 
   <div class="card">
     <h2>What it does</h2>
     <ul>
-      <li>Fixes Google sign-in so accounts can be added again</li>
+      <li>Fixes Google sign-in so accounts can be added again (iOS 5 through iOS 10)</li>
       <li>Restores the signed-in home feed and personal recommendations</li>
       <li>Loads subscription uploads, favorites, watch later and uploaded videos</li>
-      <li>Keeps watch history between launches</li>
       <li>Handles feed paging without crashes or duplicate rows</li>
       <li>Provides preferences for playback quality and feed behavior</li>
     </ul>
@@ -163,6 +105,7 @@
   <div class="card">
     <h2>What doesn't work</h2>
     <ul>
+      <li>Watch history (not fixed in this release)</li>
       <li>Purchases</li>
       <li>Age-restricted content in some regions</li>
       <li>The Add Channel button, which opens a channel list with no sensible default</li>
@@ -173,7 +116,7 @@
     <h2>Install</h2>
     <ol>
       <li>Add the source below in Cydia, Sileo or Zebra.</li>
-      <li>Search for <strong>oldtube</strong> and install it.</li>
+      <li>Search for <strong>oldtube</strong> and install the package for your iOS version — <code>oldtube</code> on iOS 7–10, or <code>oldtube (iOS 5–6)</code> on iOS 5–6. Cydia only offers the one that fits.</li>
       <li>Respring the device.</li>
     </ol>
     <div class="source">
@@ -184,12 +127,16 @@
       <a class="btn" id="sileo" href="#">Add to Sileo</a>
       <a class="btn secondary" id="cydia" href="#">Add to Cydia</a>
     </div>
-    <p class="muted">The package installs YouTube 2.0.0 and the tweak together, replaces any previous oldtube package, and keeps existing settings and history.</p>
+    <p class="muted">The package installs YouTube 2.0.0 and the tweak together and pulls in the shared LightKit dependency. It replaces any previous oldtube package and keeps existing settings.</p>
   </div>
 
   <div class="card">
     <h2>Requirements</h2>
     <p>Jailbroken iOS 5.0 – 10.x with MobileSubstrate and PreferenceLoader. Supported YouTube versions: 1.0.0, 1.0.1, 1.1.0, 1.2.1, 1.3.0, 1.4.0 and 2.0.0.</p>
+    <ul>
+      <li><strong>iOS 7.0 – 10.x:</strong> install <code>oldtube</code>.</li>
+      <li><strong>iOS 5.0 – 6.x:</strong> install <code>oldtube (iOS 5–6)</code>.</li>
+    </ul>
   </div>
 
   <footer>physmath repository · <a href="../../">physmathdev.github.io/physmath</a></footer>
