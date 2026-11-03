@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.5.1-1 — physmath</title>
+<title>oldtube 1.5.2-1 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · v1.5.1-1 · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · v1.5.2-1 · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,11 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.5.2-1</h2>
+    <ul>
+      <li><strong>Fixed the iOS 5–6 launch crash.</strong> The dark theme set a tab-bar style that only exists from iOS 7 on; on iOS 5/6 that raised an exception and closed YouTube during startup. It is now applied only where the API exists, so the app launches normally on iOS 5 and 6.</li>
+      <li><strong>Home-screen icon fixed for iOS 5–6.</strong> Those systems do not apply the iOS 7 rounded icon mask, so the icon is now pre-cropped with transparent rounded corners instead of showing a dark square background.</li>
+    </ul>
     <h2>What's new in 1.5.1-1</h2>
     <ul>
       <li><strong>The light/dark switch is now easy to find.</strong> It sits at the very top of Settings → oldtube, in a new <strong>Appearance</strong> group, instead of being buried in Misc Settings.</li>
