@@ -1,6 +1,6 @@
 Package: com.physmath.oldtube
 Name: oldtube
-Version: 1.5.2-1
+Version: 1.5.1-2
 Architecture: iphoneos-arm
 Description: oldtube for iOS 7-10: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-2.0.0), with a light/dark theme switch, a 1080p option and an in-player quality menu next to the subtitle button, plus working Google sign-in.
 Maintainer: physmath <physmathdev@users.noreply.github.com>
@@ -12,12 +12,12 @@ Replaces: com.google.ios.youtube, dev.preloading.tubereplacer
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
-Installed-Size: 27400
-Filename: debs/com.physmath.oldtube_1.5.2-1_iphoneos-arm.deb
-Size: 8673646
-MD5sum: e1e2956c800c4c8bc115e529d38924ad
-SHA1: c9878f080e5f6c00d75cf79d868cf48f3e35d98b
-SHA256: 4b333dc2b38968ee5df967d8ca1c8bd12c31a5c562d410a981cfa02b1ce4d766
+Installed-Size: 27404
+Filename: debs/com.physmath.oldtube_1.5.1-2_iphoneos-arm.deb
+Size: 8687180
+MD5sum: 631df8ee7a21d3616b136483774f4e77
+SHA1: 5dadeef659837b6ed799cea2847614af3b3dd088
+SHA256: 2e6d52dc6f1c29108af0bee09bc25825aa2032eca1fe5642f03df3549c158434
 
 Package: com.physmath.oldtube.ios6
 Name: oldtube (iOS 5-6)
