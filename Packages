@@ -14,10 +14,10 @@ Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 27396
 Filename: debs/com.physmath.oldtube_1.5.1_iphoneos-arm.deb
-Size: 8671380
-MD5sum: 60b295f7e5d3c56de5201109819cfa40
-SHA1: 3b6f738e2328a73050b94433fac571619841aeae
-SHA256: 8581176271d8154bb9d52cb9614e4e3b8d59ed01f30c8c215f0cf145c4281396
+Size: 8672478
+MD5sum: 59fa3da788390e71b0d361eabde01ac4
+SHA1: b302b241dee62af4e889d9a1786c71b71e766de3
+SHA256: 237d3a6a15ed92662ae150cd345f78804321e4cc2b98070f3f26dd51a9848586
 
 Package: com.physmath.oldtube.ios6
 Name: oldtube (iOS 5-6)
@@ -35,10 +35,10 @@ Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 27396
 Filename: debs/com.physmath.oldtube.ios6_1.5.1_iphoneos-arm.deb
-Size: 8671382
-MD5sum: 27deee33b7d1235e95cd549c0cbd7c1a
-SHA1: 190e4e6fb3d603f946dded3e7b70fccd45ce8ef2
-SHA256: 8d4ea813dca4df6ec8d89a56a7daee2d5e7bf91e102e4f86b2145301b48c548e
+Size: 8672484
+MD5sum: d2219581c90d8a8546462d6bbd448698
+SHA1: 6ecbbe4de1b343e2adfbe46b1612e3e5192dce20
+SHA256: c4ba7f90978eb2ef0622bb31b1cfee4b8c07aafefaf6c7d72a9c6e0b53c4c08d
 
 Package: com.physmath.oldtube.lightkit
 Name: oldtube LightKit
