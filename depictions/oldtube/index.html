@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.5.1-2 / 1.5.2-1 — physmath</title>
+<title>oldtube 1.6.0 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,13 +45,13 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.5.1-2 · iOS 5–6: v1.5.2-1 · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.0 (YouTube 2.0.0) · iOS 5–6: v1.6.0 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
   <div class="badges">
     <span class="badge">iOS 5.0 – 10.x</span>
-    <span class="badge">YouTube 2.0.0</span>
+    <span class="badge">YouTube 1.4.0 / 2.0.0</span>
     <span class="badge">Tweaks</span>
     <span class="badge">iphoneos-arm</span>
     <span class="badge">Free</span>
@@ -59,7 +59,7 @@
 
   <div class="card">
     <h2>About</h2>
-    <p>oldtube is a full YouTube client for iOS 5–10, built on the classic Google YouTube app <strong>2.0.0</strong>. It runs without a backend server of its own.</p>
+    <p>oldtube is a full YouTube client for iOS 5–10, built on the classic Google YouTube app — <strong>2.0.0</strong> on iOS 7–10 and <strong>1.4.0</strong> on iOS 5–6. It runs without a backend server of its own.</p>
     <p>It gives you the complete experience: sign-in with your Google account, the signed-in home feed, subscriptions, personal recommendations, search, channels, playlists, comments, subtitles, background playback and an in-player quality menu up to 1080p — plus a light/dark theme.</p>
     <p>The one major feature that does <strong>not</strong> work right now is watch history. It is not fixed in this release and is not claimed as a feature.</p>
     <p>Because the sign-in browser differs between the two OS ranges, oldtube ships as two packages:</p>
@@ -67,11 +67,17 @@
       <li><strong>oldtube</strong> (<code>com.physmath.oldtube</code>) — iOS 7.0 – 10.x.</li>
       <li><strong>oldtube (iOS 5–6)</strong> (<code>com.physmath.oldtube.ios6</code>) — iOS 5.0 – 6.x.</li>
     </ul>
-    <p>Both automatically install a shared <strong>LightKit</strong> package (<code>com.physmath.oldtube.lightkit</code>), the embedded modern browser that Google sign-in runs in. Install the package that matches your iOS version; the two conflict, so only one is present.</p>
+    <p>Both packages include <strong>LightKit</strong>, the embedded modern browser that Google sign-in runs in, so there is no separate LightKit package to install any more. Install the package that matches your iOS version; the two conflict, so only one is present.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.0</h2>
+    <ul>
+      <li><strong>iOS 5–6 now uses YouTube 1.4.0.</strong> The iOS 5–6 package bundles the classic YouTube 1.4.0 app instead of 2.0.0. 1.4.0 is the version oldtube was originally built for, and it replaces the 2.0.0 payload previously shipped on iOS 5 and 6.</li>
+      <li><strong>LightKit is bundled into both packages.</strong> The embedded sign-in browser is now installed by oldtube itself on both iOS 5–6 and iOS 7–10. The separate <code>com.physmath.oldtube.lightkit</code> package is no longer needed and is removed automatically on upgrade.</li>
+      <li><strong>iOS 7–10 payload is unchanged apart from those files.</strong> It still bundles YouTube 2.0.0 and the cropped icon.</li>
+    </ul>
     <h2>What's new in 1.5.1-2 (iOS 7–10)</h2>
     <ul>
       <li><strong>Home-screen icon cropped.</strong> The icon is now pre-cropped with transparent rounded corners, so the red button fills the icon tile instead of sitting inside a dark square frame. Nothing else changed in the iOS 7–10 package.</li>
@@ -163,12 +169,12 @@
       <a class="btn" id="sileo" href="#">Add to Sileo</a>
       <a class="btn secondary" id="cydia" href="#">Add to Cydia</a>
     </div>
-    <p class="muted">The package installs YouTube 2.0.0 and the tweak together and pulls in the shared LightKit dependency. It replaces any previous oldtube package and keeps existing settings.</p>
+    <p class="muted">The package installs the matching YouTube app (2.0.0 on iOS 7–10, 1.4.0 on iOS 5–6), the tweak and LightKit together. It replaces any previous oldtube package and keeps existing settings.</p>
   </div>
 
   <div class="card">
     <h2>Requirements</h2>
-    <p>Jailbroken iOS 5.0 – 10.x with MobileSubstrate and PreferenceLoader. The package installs and runs on the classic YouTube app <strong>2.0.0</strong>.</p>
+    <p>Jailbroken iOS 5.0 – 10.x with MobileSubstrate and PreferenceLoader. The package bundles the matching classic YouTube app: <strong>1.4.0</strong> on iOS 5–6 and <strong>2.0.0</strong> on iOS 7–10.</p>
     <ul>
       <li><strong>iOS 7.0 – 10.x:</strong> install <code>oldtube</code>.</li>
       <li><strong>iOS 5.0 – 6.x:</strong> install <code>oldtube (iOS 5–6)</code>.</li>
