@@ -20,7 +20,7 @@ Add it in Cydia, Sileo, Zebra or Installer.
 | Package | Version | Description |
 | --- | --- | --- |
 | [oldtube](depictions/oldtube/) | 1.6.0 | Full YouTube client for **iOS 7–10**, built on the classic YouTube app 2.0.0, with sign-in, home feed, subscriptions, search, playlists, comments, up to 1080p, a light/dark theme and a pre-cropped rounded icon. Bundles the LightKit sign-in browser. Watch history does not work yet. |
-| [oldtube (iOS 5–6)](depictions/oldtube/) | 1.6.1 | Same full client for **iOS 5–6**, built on the classic YouTube app 1.4.0, with the launch crash fixed, a pre-cropped rounded icon, the LightKit browser bundled and the same in-player quality gear as the iOS 7–10 package. Conflicts with the iOS 7–10 package; install the one that matches your iOS version. |
+| [oldtube (iOS 5–6)](depictions/oldtube/) | 1.6.2 | Same full client for **iOS 5–6**, built on the classic YouTube app 1.4.0, with the launch crash fixed, a pre-cropped rounded icon, the LightKit browser bundled and the same in-player quality gear as the iOS 7–10 package. 1.6.2 fixes the playback error that appeared after changing quality. Conflicts with the iOS 7–10 package; install the one that matches your iOS version. |
 
 ## Adding or updating packages
 

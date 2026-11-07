@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.0 — physmath</title>
+<title>oldtube 1.6.2 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.0 (YouTube 2.0.0) · iOS 5–6: v1.6.1 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.0 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,10 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.2 (iOS 5–6)</h2>
+    <ul>
+      <li><strong>Fixed the playback error after changing quality.</strong> On YouTube 1.4.0 the player used to trim its SABR adaptive ladder down to the chosen height. That could leave playback negotiating with a partial format list and showing “playback error” on the next video. The full ladder now stays intact and the choice is applied as a playback hint instead, so video starts reliably at the selected quality (or the closest one the video actually offers).</li>
+    </ul>
     <h2>What's new in 1.6.1 (iOS 5–6)</h2>
     <ul>
       <li><strong>The player quality gear is back on iOS 5–6.</strong> YouTube 1.4.0 uses a different player controls view, so the in-player gear from the iOS 7–10 package did not appear after the move to 1.4.0. It is now added to the 1.4.0 player bar, in the same place next to the CC button, with the same Авто / 1080p / 720p / 360p / 240p / 144p sheet. The choice is applied to the SABR stream the next time a video is opened. The iOS 7–10 package is unchanged.</li>
