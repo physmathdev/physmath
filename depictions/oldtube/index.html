@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.2 — physmath</title>
+<title>oldtube 1.6.3 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.0 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.3 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,11 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.3 (iOS 7–10)</h2>
+    <ul>
+      <li><strong>Fixed the dark-theme contrast bug.</strong> The iPad feed — and the other list and card screens — painted their cards and the video “meta” panels with light built-in images, so the light-grey titles and view counts sat on white cards. Those image-backed surfaces now use the dark card colour while the dark theme is on, so the feed is readable again.</li>
+      <li><strong>Finished the dark theme for the 2.0.0 UI.</strong> Feed and list cells now ask for the app's own dark card artwork, and the grouped-table cards, section headers, suggested/related cells, GoogleKit grey surfaces and separators all follow the dark palette. iPad titles now use the light palette too. The iOS 5–6 package is unchanged.</li>
+    </ul>
     <h2>What's new in 1.6.2 (iOS 5–6)</h2>
     <ul>
       <li><strong>Fixed the playback error after changing quality.</strong> On YouTube 1.4.0 the player used to trim its SABR adaptive ladder down to the chosen height. That could leave playback negotiating with a partial format list and showing “playback error” on the next video. The full ladder now stays intact and the choice is applied as a playback hint instead, so video starts reliably at the selected quality (or the closest one the video actually offers).</li>
