@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.4 — physmath</title>
+<title>oldtube 1.6.5 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.4 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.5 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,11 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.5 (iOS 7–10)</h2>
+    <ul>
+      <li><strong>Dark theme covers the last light surfaces.</strong> The strip under the video (the share / add-to action bar), the <strong>Subscribed</strong> button and the search-suggestions popover were still loaded as plain white artwork, so they stayed bright under the light text. They are now recoloured through the dark palette, and their grey glyphs (“add to”, share, and the popover’s “Варианты” header) flip to a light tone so they stay readable. The light theme is untouched; the iOS 5–6 package is unchanged.</li>
+      <li><strong>One gear for quality and subtitles.</strong> The separate CC button is folded into the player’s gear button. Tapping the gear now opens a single settings sheet with <strong>СУБТИТРЫ</strong> (which raises the app’s own subtitle picker) and <strong>КАЧЕСТВО</strong> (the Авто / 1080p / 720p / 360p / 240p / 144p list), so the whole playback menu lives in one place instead of being split across two buttons.</li>
+    </ul>
     <h2>What's new in 1.6.4 (iOS 7–10)</h2>
     <ul>
       <li><strong>Dark theme completed on the remaining surfaces.</strong> The comment cell background, the channel page’s top bar and default banner, the tab-title bar and its separator, and the thumbnail placeholder are loaded as plain images rather than as image views, so 1.6.3’s view-based fix left them light. They are now recoloured through the palette while the dark theme is on. The iOS 5–6 package is unchanged.</li>
@@ -141,7 +146,7 @@
     <ul>
       <li><strong>Playback no longer freezes after the first minute or two.</strong> The player now locks on to the exact format it is playing, so YouTube can no longer switch to a format the local stream cannot serve.</li>
       <li><strong>Playback no longer stalls when YouTube omits the selected formats.</strong> Formats are read from the media headers that actually arrive instead of being dropped.</li>
-      <li><strong>Quality menu in the player bar.</strong> A gear button opens a dark bottom sheet with Auto / 1080p / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height limits the adaptive stream ladder and takes effect the next time a video is opened.</li>
+      <li><strong>Quality and subtitles in the player bar.</strong> A gear button opens a dark settings sheet with СУБТИТРЫ and КАЧЕСТВО; the quality list offers Auto / 1080p / 720p / 360p / 240p / 144p and ticks the active choice. Picking a height limits the adaptive stream ladder and takes effect the next time a video is opened.</li>
       <li><strong>Endless personal recommendations.</strong> The "What To Watch" feed keeps loading related videos instead of stopping after the first page.</li>
       <li><strong>Bundled n/sig solver.</strong> Playback signatures work offline, with an automatic weekly refresh.</li>
       <li><strong>New identity.</strong> The oldtube icon on the home screen, the oldtube name, an oldtube launch screen, a cleaned-up preferences panel, and no analytics or debug mail.</li>
