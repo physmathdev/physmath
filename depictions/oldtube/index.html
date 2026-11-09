@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.5 — physmath</title>
+<title>oldtube 1.6.6 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.5 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.6 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,11 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.6 (iOS 7–10)</h2>
+    <ul>
+      <li><strong>The in-player settings menu now works.</strong> In 1.6.5 the sheet that holds quality and subtitles dismissed itself as soon as you tapped a row: the tap catcher that closes the menu on the dimmed background also swallowed the taps on its own rows. Rows now receive their taps, so <strong>Качество</strong> opens the quality list and <strong>Субтитры</strong> raises the app’s own subtitle picker, while a tap on the background still closes the menu.</li>
+      <li><strong>Clearer menu labels.</strong> The two entries are now written <strong>Субтитры</strong> and <strong>Качество</strong> instead of all-caps.</li>
+    </ul>
     <h2>What's new in 1.6.5 (iOS 7–10)</h2>
     <ul>
       <li><strong>Dark theme covers the last light surfaces.</strong> The strip under the video (the share / add-to action bar), the <strong>Subscribed</strong> button and the search-suggestions popover were still loaded as plain white artwork, so they stayed bright under the light text. They are now recoloured through the dark palette, and their grey glyphs (“add to”, share, and the popover’s “Варианты” header) flip to a light tone so they stay readable. The light theme is untouched; the iOS 5–6 package is unchanged.</li>
