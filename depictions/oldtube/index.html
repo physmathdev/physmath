@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.6 — physmath</title>
+<title>oldtube 1.6.7 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.6 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.7 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,12 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.7 (iOS 7–10)</h2>
+    <ul>
+      <li><strong>Pinch to zoom the video.</strong> Put two fingers on the picture and pinch to zoom in (up to 4×) and back out. The frame is clipped to the player, and the zoom stays put while the player is open; the app’s own pinch-to-fullscreen gesture now waits, so the two never fight.</li>
+      <li><strong>Dark subtitle picker.</strong> The app’s subtitle/track picker (a wheel with a Cancel / Select toolbar) now follows the dark theme instead of flashing the stock light grey, keeping the iOS 7–10 look consistent with the rest of the player.</li>
+      <li><strong>Fully dark search field on iPad.</strong> The iPad search field and the title bar behind it are now painted dark all the way, so no light strip remains around the search box.</li>
+    </ul>
     <h2>What's new in 1.6.6 (iOS 7–10)</h2>
     <ul>
       <li><strong>The in-player settings menu now works.</strong> In 1.6.5 the sheet that holds quality and subtitles dismissed itself as soon as you tapped a row: the tap catcher that closes the menu on the dimmed background also swallowed the taps on its own rows. Rows now receive their taps, so <strong>Качество</strong> opens the quality list and <strong>Субтитры</strong> raises the app’s own subtitle picker, while a tap on the background still closes the menu.</li>
