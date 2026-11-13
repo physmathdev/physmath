@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.7 — physmath</title>
+<title>oldtube 1.6.8 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.7 (YouTube 2.0.0) · iOS 5–6: v1.6.2 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.8 (YouTube 2.0.0) · iOS 5–6: v1.6.8 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,13 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.8 (iOS 5–6)</h2>
+    <ul>
+      <li><strong>The feed is dark on iOS 5–6.</strong> The handles that came back from the last iOS 5–6 build were the light strips above and below every thumbnail: YouTube 1.4.0 wraps each feed card in its own light artwork (<code>feed_bubble</code> and the <code>*_meta_background</code> panels), which ignored the dark background. Those surfaces, the grouped settings/general tables and the comment box now recolour through the dark palette, so the feed and settings screens no longer have white cards under light text.</li>
+      <li><strong>The promo banner goes dark too.</strong> The tall glossy bar pinned at the top of the feed (shown while signed out) was a bright blue/white image with a white swipe arrow. It is now painted in the dark card colour with light text, so the top of the page matches the rest of the theme.</li>
+      <li><strong>One gear for quality and subtitles on iOS 5–6.</strong> The separate CC button is folded into the player’s gear, exactly like the iOS 7–10 package. Tapping the gear opens a single sheet with <strong>Субтитры</strong> (the app’s own subtitle picker) and <strong>Качество</strong> (the Авто / 1080p / 720p / 360p / 240p / 144p list) instead of splitting them across two buttons.</li>
+      <li><strong>The iOS 7–10 package is unchanged.</strong> It is rebuilt at the same version so both packages stay in step; the 2.0.0 app behaves exactly as in 1.6.7.</li>
+    </ul>
     <h2>What's new in 1.6.7 (iOS 7–10)</h2>
     <ul>
       <li><strong>Pinch to zoom the video.</strong> Put two fingers on the picture and pinch to zoom in (up to 4×) and back out. The frame is clipped to the player, and the zoom stays put while the player is open; the app’s own pinch-to-fullscreen gesture now waits, so the two never fight.</li>
