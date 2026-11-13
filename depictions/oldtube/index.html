@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.8 — physmath</title>
+<title>oldtube 1.6.9 — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.8 (YouTube 2.0.0) · iOS 5–6: v1.6.8 (YouTube 1.4.0) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.9 (YouTube 2.0.0) · iOS 5–6: v1.6.9 (YouTube 1.4.0) · physmath</div>
     </div>
   </div>
 
@@ -72,6 +72,10 @@
   </div>
 
   <div class="card">
+    <h2>What's new in 1.6.9 (iOS 5–6)</h2>
+    <ul>
+      <li><strong>The player gear no longer crashes.</strong> Tapping the gear on iOS 5/6 threw an “unrecognised selector” exception and closed YouTube as soon as the menu was built: the menu rows used <code>tintColor</code>, an iOS 7 property that does not exist on iOS 5/6. It is now applied only where the system supports it, so the sheet opens normally and both <strong>Субтитры</strong> and <strong>Качество</strong> work. The iOS 7–10 package is unchanged.</li>
+    </ul>
     <h2>What's new in 1.6.8 (iOS 5–6)</h2>
     <ul>
       <li><strong>The feed is dark on iOS 5–6.</strong> The handles that came back from the last iOS 5–6 build were the light strips above and below every thumbnail: YouTube 1.4.0 wraps each feed card in its own light artwork (<code>feed_bubble</code> and the <code>*_meta_background</code> panels), which ignored the dark background. Those surfaces, the grouped settings/general tables and the comment box now recolour through the dark palette, so the feed and settings screens no longer have white cards under light text.</li>
