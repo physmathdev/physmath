@@ -1,41 +1,62 @@
 Package: com.physmath.oldtube
 Name: oldtube
-Version: 1.6.10
+Version: 1.6.11
 Architecture: iphoneos-arm
 Description: oldtube for iOS 7-10: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-2.0.0), with a light/dark theme switch, a 1080p option and a single in-player settings menu for quality and subtitles, plus working Google sign-in. Bundles YouTube 2.0.0 and the LightKit browser runtime.
 Maintainer: physmath <physmathdev@users.noreply.github.com>
 Author: physmath <physmathdev@users.noreply.github.com>
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 7.0), firmware (<< 11.0)
-Conflicts: com.physmath.oldtube.ios6, com.physmath.oldtube.lightkit, bag.xml.tuberepair
+Conflicts: com.physmath.oldtube.ios6, com.physmath.oldtube.ios5, com.physmath.oldtube.lightkit, bag.xml.tuberepair
 Replaces: com.google.ios.youtube, dev.preloading.tubereplacer, com.physmath.oldtube.lightkit
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 112888
-Filename: debs/com.physmath.oldtube_1.6.10_iphoneos-arm.deb
-Size: 35214802
-MD5sum: 8cd7e72a3b115366425237fd596a1daa
-SHA1: 20c14ee180e4bce07654b9fa4f69f2b3b2f137ab
-SHA256: 0594af92ccf882502d49fd2c1e6f943832d91f93f45f4109fcd7c85a2231a8bf
+Filename: debs/com.physmath.oldtube_1.6.11_iphoneos-arm.deb
+Size: 35217712
+MD5sum: 2aede489fdf6571eb537befaec567248
+SHA1: c6d77478dae8f9a080a607279d75cfbb2fb588c0
+SHA256: 8c7c3e76e20db1144b7f05b40400129e384af5b29a4670ea5430c171f247d2e7
 
-Package: com.physmath.oldtube.ios6
-Name: oldtube (iOS 5-6)
-Version: 1.6.10
+Package: com.physmath.oldtube.ios5
+Name: oldtube (iOS 5)
+Version: 1.6.11
 Architecture: iphoneos-arm
-Description: oldtube for iOS 5-6: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-1.4.0), with a light/dark theme switch, a 1080p option and a single in-player settings menu for quality and subtitles, plus working Google sign-in. Bundles YouTube 1.4.0 and the LightKit browser runtime.
+Description: oldtube for iOS 5: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-1.4.0), with a light/dark theme switch, a 1080p option and a single in-player settings menu for quality and subtitles, plus working Google sign-in. Bundles YouTube 1.4.0 patched to run on iOS 5, with the LightKit browser runtime.
 Maintainer: physmath <physmathdev@users.noreply.github.com>
 Author: physmath <physmathdev@users.noreply.github.com>
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 7.0)
-Conflicts: com.physmath.oldtube, com.physmath.oldtube.lightkit, bag.xml.tuberepair
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 5.0), firmware (<< 6.0)
+Conflicts: com.physmath.oldtube, com.physmath.oldtube.ios6, com.physmath.oldtube.lightkit, bag.xml.tuberepair
+Replaces: com.physmath.oldtube, com.physmath.oldtube.ios6, com.google.ios.youtube, dev.preloading.tubereplacer, com.physmath.oldtube.lightkit
+Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
+Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
+Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
+Installed-Size: 104380
+Filename: debs/com.physmath.oldtube.ios5_1.6.11_iphoneos-arm.deb
+Size: 33805436
+MD5sum: 1f7605d11f139816f52edea2b9f5766e
+SHA1: 9da11b9eddeaf94464a85edec63da2dd2e11a539
+SHA256: 4f38dd253d5502b277e70f6121063ff6e32ee0826beb58d05e02c5f58f4ff7d4
+
+Package: com.physmath.oldtube.ios6
+Name: oldtube (iOS 6)
+Version: 1.6.11
+Architecture: iphoneos-arm
+Description: oldtube for iOS 6: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-1.4.0), with a light/dark theme switch, a 1080p option and a single in-player settings menu for quality and subtitles, plus working Google sign-in. Bundles YouTube 1.4.0 and the LightKit browser runtime.
+Maintainer: physmath <physmathdev@users.noreply.github.com>
+Author: physmath <physmathdev@users.noreply.github.com>
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 6.0), firmware (<< 7.0)
+Conflicts: com.physmath.oldtube, com.physmath.oldtube.ios5, com.physmath.oldtube.lightkit, bag.xml.tuberepair
 Replaces: com.physmath.oldtube, com.google.ios.youtube, dev.preloading.tubereplacer, com.physmath.oldtube.lightkit
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
 Installed-Size: 104284
-Filename: debs/com.physmath.oldtube.ios6_1.6.10_iphoneos-arm.deb
-Size: 33754892
-MD5sum: 4411c5346e5e56f5254c10cd37a043ca
-SHA1: 21d0b310e5f108647366db3f0f4f3a031f054f6a
-SHA256: ac714b96bc2a7cd73c939f3f40277c1387c7c6bfb09425a1c09d135a5c84d05d
+Filename: debs/com.physmath.oldtube.ios6_1.6.11_iphoneos-arm.deb
+Size: 33750908
+MD5sum: e2ed6e16477a31a94a5e125c991c05ea
+SHA1: 858cf4beee058d7749b0dad64d88e8e68969b8dd
+SHA256: ef908db7bbb44929171a5fa106f344b87fdb8ee474b2bb22f8769add4665f7ba
