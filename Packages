@@ -21,7 +21,7 @@ SHA256: 8c7c3e76e20db1144b7f05b40400129e384af5b29a4670ea5430c171f247d2e7
 
 Package: com.physmath.oldtube.ios5
 Name: oldtube (iOS 5)
-Version: 1.6.11
+Version: 2.0.0
 Architecture: iphoneos-arm
 Description: oldtube for iOS 5: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-1.4.0), with a light/dark theme switch, a 1080p option and a single in-player settings menu for quality and subtitles, plus working Google sign-in. Bundles YouTube 1.4.0 patched to run on iOS 5, with the LightKit browser runtime.
 Maintainer: physmath <physmathdev@users.noreply.github.com>
@@ -33,16 +33,16 @@ Replaces: com.physmath.oldtube, com.physmath.oldtube.ios6, com.google.ios.youtub
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
-Installed-Size: 104380
-Filename: debs/com.physmath.oldtube.ios5_1.6.11_iphoneos-arm.deb
-Size: 33805436
-MD5sum: 1f7605d11f139816f52edea2b9f5766e
-SHA1: 9da11b9eddeaf94464a85edec63da2dd2e11a539
-SHA256: 4f38dd253d5502b277e70f6121063ff6e32ee0826beb58d05e02c5f58f4ff7d4
+Installed-Size: 105656
+Filename: debs/com.physmath.oldtube.ios5_2.0.0_iphoneos-arm.deb
+Size: 34263850
+MD5sum: 4a28d543ff2bc6b85801673de7cfa09a
+SHA1: b401cb56c1c93f8dbd76133db082b3bd11b82811
+SHA256: 72f5e95979d2904f4e5c89cd863524f4979041110b22754d707a4b05df1e064a
 
 Package: com.physmath.oldtube.ios6
 Name: oldtube (iOS 6)
-Version: 1.6.11
+Version: 2.0.0
 Architecture: iphoneos-arm
 Description: oldtube for iOS 6: endless personal recommendations and fixed feeds for the classic YouTube app (1.0.0-1.4.0), with a light/dark theme switch, a 1080p option and a single in-player settings menu for quality and subtitles, plus working Google sign-in. Bundles YouTube 1.4.0 and the LightKit browser runtime.
 Maintainer: physmath <physmathdev@users.noreply.github.com>
@@ -54,9 +54,9 @@ Replaces: com.physmath.oldtube, com.google.ios.youtube, dev.preloading.tuberepla
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
-Installed-Size: 104284
-Filename: debs/com.physmath.oldtube.ios6_1.6.11_iphoneos-arm.deb
-Size: 33750908
-MD5sum: e2ed6e16477a31a94a5e125c991c05ea
-SHA1: 858cf4beee058d7749b0dad64d88e8e68969b8dd
-SHA256: ef908db7bbb44929171a5fa106f344b87fdb8ee474b2bb22f8769add4665f7ba
+Installed-Size: 105564
+Filename: debs/com.physmath.oldtube.ios6_2.0.0_iphoneos-arm.deb
+Size: 34203744
+MD5sum: 4601c42025116ba052225c42a004bc6e
+SHA1: 2f22836baf71c6d36ae6c1035b33ecbe4647b3c8
+SHA256: 05d0abe020cf27a091494a3e7dcffef5e9d04cdf997d3b476753813832c5f146

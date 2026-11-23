@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 1.6.11 — physmath</title>
+<title>oldtube 2.0.0 (iOS 5–6) — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.11 (YouTube 2.0.0) · iOS 6: v1.6.11 (YouTube 1.4.0) · iOS 5: v1.6.11 (YouTube 1.4.0, patched) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v1.6.11 (YouTube 2.0.0) · iOS 6: v2.0.0 (YouTube 1.4.0) · iOS 5: v2.0.0 (YouTube 1.4.0, patched) · physmath</div>
     </div>
   </div>
 
@@ -64,12 +64,21 @@
     <p>The one major feature that does <strong>not</strong> work right now is watch history. It is not fixed in this release and is not claimed as a feature.</p>
     <p>Because the sign-in browser differs between the older and newer systems, oldtube ships as three packages:</p>
     <ul>
-      <li><strong>oldtube</strong> (<code>com.physmath.oldtube</code>) — iOS 7.0 – 10.x.</li>
-      <li><strong>oldtube (iOS 6)</strong> (<code>com.physmath.oldtube.ios6</code>) — iOS 6.0 – 6.x.</li>
-      <li><strong>oldtube (iOS 5)</strong> (<code>com.physmath.oldtube.ios5</code>) — iOS 5.0 – 5.x.</li>
+      <li><strong>oldtube</strong> (<code>com.physmath.oldtube</code>) — iOS 7.0 – 10.x, app name “oldtube”.</li>
+      <li><strong>oldtube (iOS 6)</strong> (<code>com.physmath.oldtube.ios6</code>) — iOS 6.0 – 6.x, app name “OldTube”.</li>
+      <li><strong>oldtube (iOS 5)</strong> (<code>com.physmath.oldtube.ios5</code>) — iOS 5.0 – 5.x, app name “OldTube”.</li>
     </ul>
     <p>All packages include <strong>LightKit</strong>, the embedded modern browser that Google sign-in runs in, so there is no separate LightKit package to install any more. Install the package that matches your iOS version; the three conflict, so only one is present.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new in 2.0.0 (iOS 5–6)</h2>
+    <ul>
+      <li><strong>The app is now called OldTube.</strong> On the iOS 5 and iOS 6 packages the home-screen name is <strong>OldTube</strong> (previously “oldtube”), matching the icon and the rest of the project.</li>
+      <li><strong>The oldtube icon is shown on launch.</strong> The launch screen is now the red oldtube icon centred on the dark background, instead of the plain wordmark.</li>
+      <li><strong>The in-app Dark Theme row is gone.</strong> The iOS 5/6 classic app no longer adds an “Appearance → Dark Theme” section inside YouTube's own Settings. The light/dark switch lives in the iOS Settings app: <strong>Settings → oldtube → Appearance → Dark Theme</strong>. The classic app still defaults to the light theme; the iOS 7–10 package is unchanged.</li>
+    </ul>
   </div>
 
   <div class="card">
