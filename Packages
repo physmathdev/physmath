@@ -75,9 +75,9 @@ Replaces: com.physmath.oldtube, com.google.ios.youtube, dev.preloading.tuberepla
 Homepage: https://physmathdev.github.io/physmath/depictions/oldtube/
 Depiction: https://physmathdev.github.io/physmath/depictions/oldtube/
 Icon: file:///Library/PreferenceBundles/OldtubePrefs.bundle/icon@full.png
-Installed-Size: 105600
+Installed-Size: 105596
 Filename: debs/com.physmath.oldtube.ios6_2.1.0_iphoneos-arm.deb
-Size: 34215856
-MD5sum: 68d2c7721216950466c380fce4a7fc28
-SHA1: c9bd92c5bac4df7b8984adcfafc61ccbf9452a74
-SHA256: eb5572c07b6850b44d866667e661dffc7146cbe51255e27bbf880d3739ed8f7a
+Size: 34216478
+MD5sum: a3d3b3be01ef296b18068d631cd80450
+SHA1: d6880a0f61415b844b4bcb57a09f23e9d0e29ef2
+SHA256: 7048ba59dc9ced163ea755b403a41c55c77818389f25ff38e183df6f07d1462c
