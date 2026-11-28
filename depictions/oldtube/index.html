@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>oldtube 2.0.0 (iOS 5–10) — physmath</title>
+<title>oldtube 2.1.0 (iOS 5–10) — physmath</title>
 <style>
   * { box-sizing: border-box; }
   body { margin: 0; font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f6fb; color: #1c1c22; }
@@ -45,7 +45,7 @@
     <img src="icon.png" alt="oldtube icon">
     <div>
       <h1>oldtube</h1>
-      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v2.0.0 (YouTube 2.0.0) · iOS 6: v2.0.0 (YouTube 1.4.0) · iOS 5: v2.0.0 (YouTube 1.4.0, patched) · physmath</div>
+      <div class="sub">Full YouTube client for iOS 5–10 · iOS 7–10: v2.0.0 (YouTube 2.0.0) · iOS 6: v2.1.0 (YouTube 1.4.0) · iOS 5: v2.0.0 (YouTube 1.4.0, patched) · physmath</div>
     </div>
   </div>
 
@@ -70,6 +70,18 @@
     </ul>
     <p>All packages include <strong>LightKit</strong>, the embedded modern browser that Google sign-in runs in, so there is no separate LightKit package to install any more. Install the package that matches your iOS version; the three conflict, so only one is present.</p>
     <p>There is no analytics, crash reporting or telemetry.</p>
+  </div>
+
+  <div class="card">
+    <h2>What's new in 2.1.0 (iOS 6)</h2>
+    <ul>
+      <li><strong>Skeuomorphic light and dark themes.</strong> Both appearances now share one physical chrome — brushed metal with a glossy sheen and a bevelled edge — on the navigation bar, section headers, the player control bar and the bottom tab bar. Light is aluminium, dark is graphite, and the player gear keeps its matching chrome.</li>
+      <li><strong>Playback speed.</strong> The player gear now has a <strong>Скорость</strong> entry: 0.25×, 0.5×, 0.75×, Обычная, 1.25×, 1.5×, 1.75× and 2×. The chosen speed is remembered and re-applied whenever playback starts.</li>
+      <li><strong>Pinch to zoom.</strong> Put two fingers on the picture to zoom in (up to 4×) and back out, like modern YouTube.</li>
+      <li><strong>Fixed the timer being covered by the gear.</strong> The gear now takes the CC button's own slot, and any time label is nudged aside, so the total-time digits are never hidden.</li>
+      <li><strong>Fixed the player-menu fonts and the light theme.</strong> Menu rows are now opaque and high-contrast in both themes; the light theme is genuinely light (rows could previously render as dark bands) and the text stays readable.</li>
+    </ul>
+    <p class="muted">Only the iOS 6 package is updated to 2.1.0. The iOS 5 and iOS 7–10 packages stay at 2.0.0 and are unchanged; oldtube 2.0.0 for iOS 6 remains available in the repository.</p>
   </div>
 
   <div class="card">
